@@ -1,4 +1,8 @@
 dropdown-toggle ??
 header
 
-navbar - height
+all primary colors to #0066a2
+all defaults to white
+all danger to #ff0000
+all info to #7a42b3
+all warning to #ff683b
