@@ -1,6 +1,20 @@
+body {
+	background-color: #f6f5f5;
+}
+
 /*********************
 BUTTON EDITS
 *********************/
+
+.btn-default {
+	background-color: white;
+	color: #0066a2;
+}
+
+.btn-default:hover{
+	background-color: #0066a2;
+	color: white;
+}
 
 .btn-primary {
 	background-color: #0066a2;
@@ -45,4 +59,26 @@ BUTTON EDITS
 .btn:focus,
 .btn.focus {
   text-decoration: none;
+}
+
+/********************
+NAVBAR
+********************/
+
+.navbar-default {
+	background-color: white;
+	color: #0066a2;
+	border-bottom: 5px solid #0066a2;
+	height: 150px;
+}
+
+.navbar-default .navbar-brand {
+	background: url("http://canopy-cloud.com/sites/all/themes/canopytheme/images/logo.png");
+	color: transparent;
+	width: 178px;
+	height: 52px;
+}
+
+.navbar-default .navbar-text {
+	color: #0066a2;
 }
