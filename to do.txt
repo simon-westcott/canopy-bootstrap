@@ -1,7 +1,6 @@
 dropdown-toggle ??
 header
-form-horizontal background to #f6f5f5
-input - normal text to blue -- warning, danger
+form text to blue -- background = .well
 
 
 all primary colors to #0066a2
