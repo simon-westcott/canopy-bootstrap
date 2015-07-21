@@ -1,6 +1,4 @@
-dropdown-toggle ??
 header
-popovers
 
 all primary colors to #0066a2
 all defaults to white -- default text to #0066a2
