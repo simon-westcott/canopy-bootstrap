@@ -1,5 +1,4 @@
 subnav-default border
-btn-default text from white to blue
 primary dropdown button background
 Forms Header font color
 pills not active font color
@@ -11,6 +10,9 @@ list-groups not active font color
 list group item font color
 panel heading font color
 panel-primary color
+blockquotes quote color
+
+btn-default disabled
 
 
 all primary colors to #0066a2
