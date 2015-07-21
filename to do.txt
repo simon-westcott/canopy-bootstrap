@@ -1,19 +1,4 @@
-subnav-default border
-primary dropdown button background
-Forms Header font color
-pills not active font color
-breadcrumbs font color
-pagination font color
-progress bars #0066a2 is on multiple
-list-groups active background color
-list-groups not active font color
-list group item font color
-panel heading font color
-panel-primary color
-blockquotes quote color
-
-btn-default disabled
-
+progress bars #0066a2 is on multiple -- test fix is jsfiddle
 
 all primary colors to #0066a2
 all defaults to white -- default text to #0066a2

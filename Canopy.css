@@ -3,6 +3,23 @@ body {
 	color: #0066a2;
 }
 
+legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 21px;
+  font-size: 22.5px;
+  line-height: inherit;
+  color: #0066a2;
+  border: 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+a {
+  color: #0066a2;
+  text-decoration: none;
+}
+
 /*********************
 **********************
 BUTTONS
@@ -140,9 +157,11 @@ NAVBAR
 ********************/
 
 .navbar-default {
+    display:block;
 	background-color: white;
 	color: #0066a2;
-	border-bottom: 6px solid #0066a2;
+    border-bottom-width: 6px;
+	border-color: #ffffff #ffffff #0066a2 #ffffff;
 	box-shadow: 2px 10px #000000;
 	-webkit-box-shadow: 2px 10px #000000;
 	-moz-box-shadow: 2px 10px #000000;
@@ -151,7 +170,7 @@ NAVBAR
 
 .navbar-brand {
 	float: left;
-	background: url("http://canopy-cloud.com/sites/all/themes/canopytheme/images/logo.png");
+	background: url("http://canopy-cloud.com/sites/all/themes/canopytheme/images/logo.png") no-repeat;
 	color: transparent;
 	width: 178px;
 	margin-left: 15px;
@@ -160,6 +179,11 @@ NAVBAR
 
 .navbar-default .navbar-text {
 	color: #0066a2;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: none;
 }
 
 /*****************
@@ -185,7 +209,11 @@ PROGRESS BAR
 }
 
 .progress-bar-danger {
-  background-color: #CC0000;
+  background-color: #FF0000;
+}
+
+.progress-bar-warning {
+  background-color: #ff683b;
 }
 
 .progress-bar-info {
@@ -197,6 +225,30 @@ PROGRESS BAR
 LIST GROUPS
 **************************
 *************************/
+
+.list-group-item.active,
+.list-group-item.active:hover,
+.list-group-item.active:focus {
+  z-index: 2;
+  color: #ffffff;
+  background-color: #0066a2;
+  border-color: #dddddd;
+}
+
+a.list-group-item:hover,
+button.list-group-item:hover,
+a.list-group-item:focus,
+button.list-group-item:focus {
+  text-decoration: none;
+  color: #0066a2;
+  background-color: #f6f5f5;
+}
+
+
+a.list-group-item,
+button.list-group-item {
+  color: #0066a2;
+}
 
 .list-group-item-warning {
 	.color: white;
@@ -353,6 +405,19 @@ PAGINATION
   color: white;
   background-color: #0066a2;
   border-color: #dddddd;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+  position: relative;
+  float: left;
+  padding: 10px 18px;
+  line-height: 1.42857143;
+  text-decoration: none;
+  color: #0066a2;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  margin-left: -1px;
 }
 
 /**********************
@@ -623,7 +688,103 @@ a.list-group-item-danger.active:focus {
 
 /***************************
 ****************************
-POPOVERS
+BLOCKQUOTE
 ****************************
 ***************************/
 
+blockquote footer,
+blockquote small,
+blockquote .small {
+  display: block;
+  font-size: 80%;
+  line-height: 1.42857143;
+  color: #0066a2;
+}
+
+/**************************
+***************************
+PANELS
+***************************
+**************************/
+
+.panel-default > .panel-heading {
+  color: #0066a2;
+  background-color: #f6f5f5;
+  border-color: #dddddd;
+}
+
+.panel-primary {
+  border-color: #0066a2;
+}
+.panel-primary > .panel-heading {
+  color: #ffffff;
+  background-color: #0066a2;
+  border-color: #2780e3;
+}
+.panel-primary > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #0066a2;
+}
+.panel-primary > .panel-heading .badge {
+  color: #0066a2;
+  background-color: #ffffff;
+}
+.panel-primary > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #0066a2;
+}
+
+.panel-danger {
+  border-color: #ff0000;
+}
+.panel-danger > .panel-heading {
+  color: #ffffff;
+  background-color: #ff0000;
+  border-color: #f0005e;
+}
+.panel-danger > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #ff0000;
+}
+.panel-danger > .panel-heading .badge {
+  color: #ff0000;
+  background-color: #ffffff;
+}
+.panel-danger > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #ff0000;
+}
+
+.panel-warning {
+  border-color: #ff683b;
+}
+.panel-warning > .panel-heading {
+  color: #ffffff;
+  background-color: #ff683b;
+  border-color: #ff4309;
+}
+.panel-warning > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #ff683b;
+}
+.panel-warning > .panel-heading .badge {
+  color: #ff683b;
+  background-color: #ffffff;
+}
+.panel-warning > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #ff683b;
+}
+
+.panel-info {
+  border-color: #7a42b3;
+}
+.panel-info > .panel-heading {
+  color: #ffffff;
+  background-color: #7a42b3;
+  border-color: #7a42b3;
+}
+.panel-info > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #7a42b3;
+}
+.panel-info > .panel-heading .badge {
+  color: #7a42b3;
+  background-color: #ffffff;
+}
+.panel-info > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #7a42b3;
+}
