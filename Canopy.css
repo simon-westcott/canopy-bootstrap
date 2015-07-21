@@ -788,3 +788,24 @@ PANELS
 .panel-info > .panel-footer + .panel-collapse > .panel-body {
   border-bottom-color: #7a42b3;
 }
+
+/**********************
+***********************
+MISC
+***********************
+**********************/
+
+.badge {
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 1;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-align: center;
+  background-color: #0066a2;
+  border-radius: 10px;
+}
