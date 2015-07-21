@@ -196,3 +196,25 @@ ALERTS
   border-color: #7643a8;
   color: #ffffff;
 }
+
+/*******************
+********************
+LABELS
+********************
+*******************/
+
+.label-primary {
+  background-color: #0066a2;
+}
+
+.label-info {
+  background-color: #7a42b3;
+}
+
+.label-warning {
+  background-color: #ff683b;
+}
+
+.label-danger {
+  background-color: #ff0000;
+}
