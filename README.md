@@ -11,7 +11,7 @@ danger:hover to #CC0000
 info:hover to #583081
 default:hover to #0066a2 with white text
 
-
+21-7-15 jsfiddle demo https://jsfiddle.net/xprz1q3a/
 
 
 
