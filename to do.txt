@@ -1,11 +1,8 @@
 dropdown-toggle ??
 header
-badges -- nav-pills active
-pills
-tab
-breadcrumbs
 form-horizontal background to #f6f5f5
-table - danger, warning, info
+input - normal text to blue -- warning, danger
+
 
 all primary colors to #0066a2
 all defaults to white -- default text to #0066a2
