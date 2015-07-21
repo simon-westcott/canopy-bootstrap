@@ -3,9 +3,14 @@ header
 alerts
 labels
 badges
+pills
+tab
+breadcrumbs
+form-horizontal background to #f6f5f5
+table - danger, warning, info
 
 all primary colors to #0066a2
-all defaults to white
+all defaults to white -- default text to #0066a2
 all danger to #ff0000
 all info to #7a42b3
 all warning to #ff683b
@@ -13,3 +18,4 @@ all warning to #ff683b
 warning:hover to #E65E35
 danger:hover to #CC0000
 info:hover to #583081
+default:hover to #0066a2 -- text to white
