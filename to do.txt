@@ -1,5 +1,8 @@
 dropdown-toggle ??
 header
+alerts
+labels
+badges
 
 all primary colors to #0066a2
 all defaults to white
