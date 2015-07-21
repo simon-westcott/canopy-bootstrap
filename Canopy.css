@@ -203,6 +203,17 @@ LABELS
 ********************
 *******************/
 
+.label-default {
+  background-color: white;
+  color: #0066a2;
+}
+
+.label-default[href]:hover,
+.label-default[href]:focus {
+  background-color: #0066a2;
+  color: white;
+}
+
 .label-primary {
   background-color: #0066a2;
 }
@@ -218,3 +229,23 @@ LABELS
 .label-danger {
   background-color: #ff0000;
 }
+
+/*********************
+**********************
+PILLS AND BADGES
+**********************
+*********************/
+
+.list-group-item.active > .badge,
+.nav-pills > .active > a > .badge {
+  color: #0066a2;
+  background-color: #ffffff;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  color: #ffffff;
+  background-color: #0066a2;
+}
+

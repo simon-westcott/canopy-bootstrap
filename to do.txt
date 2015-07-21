@@ -1,8 +1,6 @@
 dropdown-toggle ??
 header
-alerts
-labels
-badges
+badges -- nav-pills active
 pills
 tab
 breadcrumbs
