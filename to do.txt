@@ -6,3 +6,7 @@ all defaults to white
 all danger to #ff0000
 all info to #7a42b3
 all warning to #ff683b
+
+warning:hover to #E65E35
+danger:hover to #CC0000
+info:hover to #583081
