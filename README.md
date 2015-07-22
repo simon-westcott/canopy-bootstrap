@@ -1,6 +1,6 @@
-Canopy branded bootstrap theme
+This project is to create a branded bootstrap theme for Canopy products, with the requirement to be easily customizable for a customer.
 
-The Canopy.css file changes twitter bootstrap to match the Canopy theme.
+The Canopy.css file changes twitter bootstrap to match the Canopy theme and should be used in addition to the normal twitter bootstrap files.
 
 primary colors to #0066a2 //
  defaults to white -- default text to #0066a2 //
@@ -23,4 +23,4 @@ v4 - https://jsfiddle.net/wpemzp91/3/
 
 
 
-Original style taken from: https://bootswatch.com/cosmo/
+Original style taken from: https://bootswatch.com/cosmo/ and used as a template.
