@@ -1,9 +1,10 @@
 custom css added -- needs review
 Add rebranding guidelines
-ensure that h1/h2/h3/h4 are font stag
+add custom less file
+add less.js
 
 all primary colors to #0066a2
-all defaults to white -- default text to #0066a2
+all defaults to transparent -- default text to #0066a2
 all danger to #ff0000
 all info to #7a42b3
 all warning to #ff683b
