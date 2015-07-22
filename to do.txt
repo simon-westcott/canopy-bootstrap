@@ -2,6 +2,8 @@ progress bars #0066a2 is on multiple -- test fix is jsfiddle -- need to fix 1
 navbar link backgrounds
 remove navbar inverse
 complete triangle for menus
+dropdown background to blue
+hover to darker blue
 
 all primary colors to #0066a2
 all defaults to white -- default text to #0066a2
