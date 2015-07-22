@@ -1,7 +1,10 @@
 progress bars #0066a2 is on multiple -- test fix is jsfiddle -- need to fix 1
 dropdown background to blue
 hover to darker blue
-navbar-links
+navbar-links -- background 1, 2, 3
+		text color and background for hover
+		text color to blue
+btn-link:hover text to blue and text-decoration to underline
 
 all primary colors to #0066a2
 all defaults to white -- default text to #0066a2
