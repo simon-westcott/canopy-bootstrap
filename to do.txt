@@ -1,6 +1,5 @@
 progress bars #0066a2 is on multiple -- test fix is jsfiddle -- need to fix 1
-btn-link:hover text to blue and text-decoration to underline
-set primary button background to transparent
+source quote text color
 
 all primary colors to #0066a2
 all defaults to white -- default text to #0066a2
