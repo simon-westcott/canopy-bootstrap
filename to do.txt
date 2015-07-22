@@ -1,5 +1,6 @@
 custom css added -- needs review
 Add rebranding guidelines
+ensure that h1/h2/h3/h4 are font stag
 
 all primary colors to #0066a2
 all defaults to white -- default text to #0066a2
@@ -38,3 +39,30 @@ content: ' ';
   left: 40%;
   border: 10px solid;
   border-color: transparent transparent #0066a2 transparent;
+
+
+  font
+
+  @font-face {
+  font-family: 'Stag';
+  src: local ("Stag"), 
+  src: url('//p3.zdassets.com/hc/theme_assets/320274/200025026/Stag-Medium.eot');
+  src: url('//p3.zdassets.com/hc/theme_assets/320274/200025026/Stag-Medium.eot?#iefix') format('eot'),
+  url('//p3.zdassets.com/hc/theme_assets/320274/200025026/Stag-Medium.woff') format('woff'), 
+  url('//p3.zdassets.com/hc/theme_assets/320274/200025026/Stag-Medium.ttf') format('truetype'),
+  url('//p3.zdassets.com/hc/theme_assets/320274/200025026/Stag-Medium.svg#webfont') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+  @font-face {
+  font-family: 'Stag';
+  src: local ("Stag"), 
+  src: url('theme/Stag-Medium.eot');
+  src: url('theme/Stag-Medium.eot?#iefix') format('eot'),
+  url('theme/Stag-Medium.woff') format('woff'), 
+  url('theme/Stag-Medium.ttf') format('truetype'),
+  url('theme/Stag-Medium.svg#webfont') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
