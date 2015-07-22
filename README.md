@@ -19,6 +19,8 @@ v2 - https://jsfiddle.net/wpemzp91/
 
 v3 - https://jsfiddle.net/wpemzp91/2/
 
+v4 - https://jsfiddle.net/wpemzp91/3/
+
 
 
 Original style taken from: https://bootswatch.com/cosmo/
