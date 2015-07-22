@@ -23,6 +23,7 @@
 @navbar-brand-logo: url("http://canopy-cloud.com/sites/all/themes/canopytheme/images/logo.png") no-repeat;
 @navbar-text: #0066a2;
 @navbar-border: #ffffff #ffffff #0066a2 #ffffff;
+@menu-triangle-color: transparent transparent #0066a2 transparent;
 
 @main-text: #0066a2;
 @inverse-text: #FFFFFF;
@@ -50,7 +51,7 @@
 @danger-hover: #CC0000;
 @success-hover:
 @primary-hover: #004A75;
-@default-hover:
+@default-hover: transparent;
 
 @main-font: Verdana, Arial;
 @header-font: Stag;
@@ -341,7 +342,7 @@ menu triangles
 	bottom: 100%;
 	left: 40%;
 	border: 10px solid;
-	border-color: transparent transparent #0066a2 transparent;
+	border-color: @menu-triangle-color;
 }
 
 /********************
