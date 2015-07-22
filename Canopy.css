@@ -50,6 +50,32 @@ MISC
   border-radius: 10px;
 }
 
+/*******************
+********************
+TEXT
+********************
+*******************/
+
+.text-primary,
+.text-primary:hover {
+  color: #0066a2;
+}
+
+.text-danger,
+.text-danger:hover {
+  color: #ff0000;
+}
+
+.text-warning,
+.text-warning:hover {
+  color: #ff683b;
+}
+
+.text-info,
+.text-info:hover {
+  color: #7a42b3;
+}
+
 /*********************
 **********************
 BUTTONS
@@ -688,6 +714,94 @@ TABLES
   color: #ffffff;
 }
 
+/**************************
+***************************
+PANELS
+***************************
+**************************/
+
+.panel-default > .panel-heading {
+  color: #0066a2;
+  background-color: #f6f5f5;
+  border-color: #dddddd;
+}
+
+.panel-primary {
+  border-color: #0066a2;
+}
+.panel-primary > .panel-heading {
+  color: #ffffff;
+  background-color: #0066a2;
+  border-color: #2780e3;
+}
+.panel-primary > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #0066a2;
+}
+.panel-primary > .panel-heading .badge {
+  color: #0066a2;
+  background-color: #ffffff;
+}
+.panel-primary > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #0066a2;
+}
+
+.panel-danger {
+  border-color: #ff0000;
+}
+.panel-danger > .panel-heading {
+  color: #ffffff;
+  background-color: #ff0000;
+  border-color: #f0005e;
+}
+.panel-danger > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #ff0000;
+}
+.panel-danger > .panel-heading .badge {
+  color: #ff0000;
+  background-color: #ffffff;
+}
+.panel-danger > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #ff0000;
+}
+
+.panel-warning {
+  border-color: #ff683b;
+}
+.panel-warning > .panel-heading {
+  color: #ffffff;
+  background-color: #ff683b;
+  border-color: #ff4309;
+}
+.panel-warning > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #ff683b;
+}
+.panel-warning > .panel-heading .badge {
+  color: #ff683b;
+  background-color: #ffffff;
+}
+.panel-warning > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #ff683b;
+}
+
+.panel-info {
+  border-color: #7a42b3;
+}
+.panel-info > .panel-heading {
+  color: #ffffff;
+  background-color: #7a42b3;
+  border-color: #7a42b3;
+}
+.panel-info > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #7a42b3;
+}
+.panel-info > .panel-heading .badge {
+  color: #7a42b3;
+  background-color: #ffffff;
+}
+.panel-info > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #7a42b3;
+}
+
 /*********************
 **********************
 FORMS
@@ -814,91 +928,5 @@ a.list-group-item-danger.active:focus {
   border-color: #dddddd;
 }
 
-/**************************
-***************************
-PANELS
-***************************
-**************************/
 
-.panel-default > .panel-heading {
-  color: #0066a2;
-  background-color: #f6f5f5;
-  border-color: #dddddd;
-}
-
-.panel-primary {
-  border-color: #0066a2;
-}
-.panel-primary > .panel-heading {
-  color: #ffffff;
-  background-color: #0066a2;
-  border-color: #2780e3;
-}
-.panel-primary > .panel-heading + .panel-collapse > .panel-body {
-  border-top-color: #0066a2;
-}
-.panel-primary > .panel-heading .badge {
-  color: #0066a2;
-  background-color: #ffffff;
-}
-.panel-primary > .panel-footer + .panel-collapse > .panel-body {
-  border-bottom-color: #0066a2;
-}
-
-.panel-danger {
-  border-color: #ff0000;
-}
-.panel-danger > .panel-heading {
-  color: #ffffff;
-  background-color: #ff0000;
-  border-color: #f0005e;
-}
-.panel-danger > .panel-heading + .panel-collapse > .panel-body {
-  border-top-color: #ff0000;
-}
-.panel-danger > .panel-heading .badge {
-  color: #ff0000;
-  background-color: #ffffff;
-}
-.panel-danger > .panel-footer + .panel-collapse > .panel-body {
-  border-bottom-color: #ff0000;
-}
-
-.panel-warning {
-  border-color: #ff683b;
-}
-.panel-warning > .panel-heading {
-  color: #ffffff;
-  background-color: #ff683b;
-  border-color: #ff4309;
-}
-.panel-warning > .panel-heading + .panel-collapse > .panel-body {
-  border-top-color: #ff683b;
-}
-.panel-warning > .panel-heading .badge {
-  color: #ff683b;
-  background-color: #ffffff;
-}
-.panel-warning > .panel-footer + .panel-collapse > .panel-body {
-  border-bottom-color: #ff683b;
-}
-
-.panel-info {
-  border-color: #7a42b3;
-}
-.panel-info > .panel-heading {
-  color: #ffffff;
-  background-color: #7a42b3;
-  border-color: #7a42b3;
-}
-.panel-info > .panel-heading + .panel-collapse > .panel-body {
-  border-top-color: #7a42b3;
-}
-.panel-info > .panel-heading .badge {
-  color: #7a42b3;
-  background-color: #ffffff;
-}
-.panel-info > .panel-footer + .panel-collapse > .panel-body {
-  border-bottom-color: #7a42b3;
-}
 

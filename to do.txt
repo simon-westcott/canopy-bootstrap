@@ -1,8 +1,4 @@
-source quote text color - in blockquote -- css changed with no effect -- moved to top of new css file
-.badge css not working -- moved to top
-list-group-item-heading css not changed
-panel heading css not changed
-help block text
+custom css added -- needs review
 
 all primary colors to #0066a2
 all defaults to white -- default text to #0066a2
