@@ -1,6 +1,4 @@
 progress bars #0066a2 is on multiple -- test fix is jsfiddle -- need to fix 1
-navbar link backgrounds
-remove navbar inverse
 complete triangle for menus
 dropdown background to blue
 hover to darker blue
@@ -15,3 +13,30 @@ warning:hover to #E65E35
 danger:hover to #CC0000
 info:hover to #583081
 default:hover to #0066a2 -- text to white
+
+triangle;
+
+#nav ul {
+  margin-top: 15px;
+  background: #0066A2;
+  background: rgba(255,255,255,0);
+  list-style: none;
+  position: absolute;
+  left: -9999px;
+  color: white;
+  width: auto;
+  text-align: left;
+  align-content: middle;
+  display: block;
+  margin-left: -75px;
+  line-height: 24px;
+}
+
+content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 100%;
+  left: 40%;
+  border: 10px solid;
+  border-color: transparent transparent #0066a2 transparent;

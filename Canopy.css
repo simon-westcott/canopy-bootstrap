@@ -150,6 +150,17 @@ fieldset[disabled] .btn-default.active {
   text-decoration: none;
 }
 
+.navbar-default .navbar-nav .open .dropdown-menu:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	bottom: 100%;
+	left: 40%;
+	border: 10px solid;
+	border-color: transparent transparent #0066a2 transparent;
+}
+
 /********************
 *********************
 NAVBAR
