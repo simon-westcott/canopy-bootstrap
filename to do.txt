@@ -1,4 +1,5 @@
 custom css added -- needs review
+Add rebranding guidelines
 
 all primary colors to #0066a2
 all defaults to white -- default text to #0066a2
