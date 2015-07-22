@@ -150,6 +150,10 @@ fieldset[disabled] .btn-default.active {
   text-decoration: none;
 }
 
+/************
+menu triangles
+***********/
+
 .navbar-default .navbar-nav .open .dropdown-menu:before {
 	content: ' ';
 	position: absolute;
@@ -203,6 +207,24 @@ NAVBAR
   color: #0066a2;
   background-color: #000000;
   text-decoration: none;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+	color: #ffffff;
+	background-color: #003d61;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+	color: #ffffff;
+	background-color: #003d61;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+	color: #ffffff;
+	background-color: #003d61;
 }
 
 /*****************
