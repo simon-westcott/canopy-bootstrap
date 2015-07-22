@@ -4,6 +4,7 @@ add custom less file
 add less.js
 add success buttons
 check borders and add classes in .less
+move custom css to canopycss.less
 
 all primary colors to #0066a2
 all defaults to transparent -- default text to #0066a2
