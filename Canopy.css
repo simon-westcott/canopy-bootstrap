@@ -20,6 +20,15 @@ a {
   text-decoration: none;
 }
 
+blockquote footer,
+blockquote small,
+blockquote .small {
+  display: block;
+  font-size: 80%;
+  line-height: 1.42857143;
+  color: #0066a2 !important;
+}
+
 /*********************
 **********************
 BUTTONS
@@ -770,21 +779,6 @@ a.list-group-item-danger.active:focus {
   color: #ffffff;
   background-color: #0066a2;
   border-color: #dddddd;
-}
-
-/***************************
-****************************
-BLOCKQUOTE
-****************************
-***************************/
-
-blockquote footer,
-blockquote small,
-blockquote .small {
-  display: block;
-  font-size: 80%;
-  line-height: 1.42857143;
-  color: #0066a2;
 }
 
 /**************************

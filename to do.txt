@@ -1,5 +1,5 @@
 progress bars #0066a2 is on multiple -- test fix is jsfiddle -- need to fix 1
-source quote text color
+source quote text color - in blockquote -- css changed with no effect -- moved to top of new css file
 
 all primary colors to #0066a2
 all defaults to white -- default text to #0066a2
