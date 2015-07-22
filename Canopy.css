@@ -29,6 +29,27 @@ blockquote .small {
   color: #0066a2 !important;
 }
 
+/**********************
+***********************
+MISC
+***********************
+**********************/
+
+.badge {
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 1;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-align: center;
+  background-color: #0066a2;
+  border-radius: 10px;
+}
+
 /*********************
 **********************
 BUTTONS
@@ -321,6 +342,11 @@ LIST GROUPS
 **************************
 *************************/
 
+a.list-group-item .list-group-item-heading,
+button.list-group-item .list-group-item-heading {
+  color: #0066a2;
+}
+
 .list-group-item.active,
 .list-group-item.active:hover,
 .list-group-item.active:focus {
@@ -380,6 +406,13 @@ a.list-group-item-info:focus,
 button.list-group-item-info:focus {
   color: #ffffff;
   background-color: #583081;
+}
+
+.help-block {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #0066a2;
 }
 
 /********************
@@ -869,23 +902,3 @@ PANELS
   border-bottom-color: #7a42b3;
 }
 
-/**********************
-***********************
-MISC
-***********************
-**********************/
-
-.badge {
-  display: inline-block;
-  min-width: 10px;
-  padding: 3px 7px;
-  font-size: 13px;
-  font-weight: bold;
-  color: #ffffff;
-  line-height: 1;
-  vertical-align: middle;
-  white-space: nowrap;
-  text-align: center;
-  background-color: #0066a2;
-  border-radius: 10px;
-}
