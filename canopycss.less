@@ -1,3 +1,7 @@
+/******************
+EDIT THE FONT
+******************/
+
 @font-face {
   font-family: 'Stag';
   src: local ("Stag"), 
@@ -10,32 +14,88 @@
   font-style: normal;
 }
 
+/*********************
+PAGE BACKGROUND COLOR
+*********************/
+
 @bg-color: #f6f5f5;
+
+/*********************
+MAIN FONT COLOR
+*********************/
+
+@main-text: #0066a2;
+
+/*********************
+SECONDARY FONT COLOR 
+THIS IS THE ONE WE'VE USED TO DISPLAY ON BUTTONS/COLORED OBJECTS
+*********************/
+
+@inverse-text: #FFFFFF;
+
+/********************
+MAIN FONT
+*********************/
+
+@main-font: Verdana, Arial;
+
+/*******************
+HEADING / TITLE FONT
+IF IT'S A CUSTOM FONT THE @font-face FILE LINKS AT THE TOP OF THIS FILE SHOULD ALSO BE EDITED
+********************/
+
+@header-font: Stag;
+
+/*********************
+HEADER / NAVBAR
+**********************/
 
 @navbar-bg: #FFFFFF;
 @navbar-border: #0066a2;
 @navbar-box-shadow:
-@footer-bg: #FFFFFF;
-@footer-border: #0066a2;
-@footer-box-shadow: 0px 0px 10px 2px #000000;
-
 @navbar-brand-text: transparent;
 @navbar-brand-logo: url("http://canopy-cloud.com/sites/all/themes/canopytheme/images/logo.png") no-repeat;
 @navbar-text: #0066a2;
 @navbar-border: #ffffff #ffffff #0066a2 #ffffff;
 @menu-triangle-color: transparent transparent #0066a2 transparent;
 
-@main-text: #0066a2;
-@inverse-text: #FFFFFF;
+/*******************
+FOOTER
+*******************/
+
+@footer-bg: #FFFFFF;
+@footer-border: #0066a2;
+@footer-box-shadow: 0px 0px 10px 2px #000000;
+
+/*****************
+CURSOR DISPLAYED ON A DISABLED LINK/BUTTON
+*****************/
 
 @disabled-cursor: not-allowed;
+
+/****************
+HOW A LINK IS DISPLAYED
+****************/
 
 @link-text: #0066a2;
 @link-text-bg: transparent;
 @link-decoration: underline;
 
+/****************
+DROPDOWN MENU BACKGROUND
+*****************/
+
 @dropdown-bg: #FFFFFF;
+
+/******************
+DISABLED DROPDOWN MENU TAB BACKGROUND
+*******************/
+
 @disabled-dropdown-bg: #FFFFFF;
+
+/*******************
+BUTTON/COLORED AREA BACKGROUNDS
+********************/
 
 @info: #7a42b3;
 @warning: #ff683b
@@ -44,7 +104,16 @@
 @primary: #0066a2;
 @default: transparent;
 @disabled: #000000;
+
+/****************
+DISABLED AREA TEXT COLOR
+******************/
+
 @disabled-text: #808080;
+
+/*******************
+BUTTON HOVER COLOR
+********************/
 
 @info-hover: #583081;
 @warning-hover: #E65E35;
@@ -53,25 +122,50 @@
 @primary-hover: #004A75;
 @default-hover: transparent;
 
-@main-font: Verdana, Arial;
-@header-font: Stag;
+/********************
+LIST COLORS
+*********************/
 
 @menu-list-bg: #0066a2;
 @list-group-heading-text: #0066a2;
 @list-link-decoration: none;
 @list-border: #dddddd;
 
+/*****************
+BREADCRUMB COLORS
+******************/
+
 @breadcrumb-active: #808080;
+
+/******************
+TABLE COLORS
+*******************/
 
 @table-bg: #FFFFFF;
 
+/******************
+FORM COLORS
+*******************/
+
 @form-bg: #FFFFFF;
+
+/*******************
+WELL COLORS
+********************/
 
 @well-bg: #FFFFFF;
 
+/******************
+PAGE SELECTOR COLORS
+*******************/
+
 @pagination-bg: #FFFFFF;
 
-
+/************************************************************************************
+*************************************************************************************
+UNLESS ADDING FULLY CUSTOM CSS, THERE SHOULD BE NO NEED TO EDIT ANYTHING BELOW HERE
+*************************************************************************************
+*************************************************************************************/
 
 body {
 	background-color: @bg-color;
