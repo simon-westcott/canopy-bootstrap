@@ -1,1 +1,3 @@
-How to rebrand bootstrap:
+To rebrand this template for a customer you will need to edit the canopycss.less file.
+
+The sections for rebranding are commented in the .less file.
