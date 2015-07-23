@@ -1,5 +1,7 @@
 /******************
 EDIT THE FONT
+YOU MUST HAVE THE .EOT, .WOFF, .TTF AND .SVG FILES LINKED EITHER REMOTELY OR LOCALLY
+DO NOT REMOVE THE ?#iefix OR THE #webfont SUFFIX
 ******************/
 
 @font-face {
@@ -14,7 +16,7 @@ EDIT THE FONT
   font-style: normal;
 }
 
-/*********************
+/*********************	
 PAGE BACKGROUND COLOR
 *********************/
 
@@ -51,8 +53,11 @@ HEADER / NAVBAR
 **********************/
 
 @navbar-bg: #FFFFFF;
-@navbar-border: #0066a2;
-@navbar-box-shadow:
+@navbar-height: 92px;
+@navbar-box-shadow: 2px 10px #000000;
+@navbar-border-color: #0066a2;
+@navbar-border-style: solid;
+@navbar-bottom-border-width: 6px;
 @navbar-brand-text: transparent;
 @navbar-brand-logo: url("http://canopy-cloud.com/sites/all/themes/canopytheme/images/logo.png") no-repeat;
 @navbar-text: #0066a2;
@@ -86,12 +91,14 @@ DROPDOWN MENU BACKGROUND
 *****************/
 
 @dropdown-bg: #FFFFFF;
+@dropdown-text: @main-text;  /******** PUT IN DROPDOWN-TEXT *********/
 
 /******************
-DISABLED DROPDOWN MENU TAB BACKGROUND
+DISABLED DROPDOWN MENU
 *******************/
 
 @disabled-dropdown-bg: #FFFFFF;
+@disabled-dropdown-text: @disabled-text; /********** PUT IN @DISABLED-DROPDOWN-TEXT **********/
 
 /*******************
 BUTTON/COLORED AREA BACKGROUNDS
@@ -447,14 +454,15 @@ NAVBAR
 
 .navbar-default {
     display:block;
-	background-color: white;
+	background-color: @navbar-bg;
 	color: @main-text;
-    border-bottom-width: 6px;
+	border-style: @navbar-border-style;
+    border-bottom-width: @navbar-bottom-border-width;
 	border-color: @navbar-border;
-	box-shadow: 2px 10px #000000;
-	-webkit-box-shadow: 2px 10px #000000;
-	-moz-box-shadow: 2px 10px #000000;
-	height: 92px;
+	box-shadow: @navbar-box-shadow;
+	-webkit-box-shadow: @navbar-box-shadow;
+	-moz-box-shadow: @navbar-box-shadow;
+	height: @navbar-height;
 }
 
 .navbar-brand {
