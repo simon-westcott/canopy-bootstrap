@@ -95,6 +95,7 @@ body {
   background-color: #f6f5f5;
   color: #0066a2;
   font-family: Verdana, Arial;
+  padding: 0px 100px 0px 100px;
 }
 legend {
   display: block;
@@ -967,7 +968,7 @@ footer
 ***********************/
 .footer {
   display: block;
-  height: 75px;
+  height: 60px;
   width: 100%;
   background-color: #ffffff;
   border-top: 6px solid #0066a2;
@@ -976,10 +977,11 @@ footer
   -moz-box-shadow: 0px 0px 10px 2px #000000;
   position: fixed;
   bottom: 0px;
+  left: 0px;
   text-align: center;
   z-index: 2000;
 }
 .footer-text {
   margin: auto;
-  margin-top: 40px;
+  margin-top: 20px;
 }

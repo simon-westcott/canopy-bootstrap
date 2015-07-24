@@ -136,6 +136,7 @@ BUTTON TEXT DECORATION
 **********************/
 
 @btn-hover-text-decoration: none;
+@btn-text: @inverse-text;
 
 /****************
 DISABLED AREA TEXT COLOR
@@ -1159,16 +1160,13 @@ FORMS
   border-radius: @well-border-radius;
   -webkit-box-shadow: @well-box-shadow;
   box-shadow: @well-box-shadow;
-
+}
   /*******************
   ********************
   LISTS
   ********************
   *******************/
 
-a.list-group-item-warning.active {
-  background-color: @warning;
-}
 a.list-group-item-warning.active {
   background-color: @warning;
 }
@@ -1221,6 +1219,6 @@ footer
 }
 
 .footer-text {
-	margin: @footer-text-margin;
-	margin-top: @footer-text-margin-top;
+  margin: @footer-text-margin;
+  margin-top: @footer-text-margin-top;
 }
