@@ -3,10 +3,7 @@ Add rebranding guidelines
 add custom less file
 add less.js
 add success buttons
-check borders and add classes in .less
 move custom css to canopycss.less
-add in @dropdown text
-add in @disabled-dropdown-text
 
 HTML boilerplate methods
 
