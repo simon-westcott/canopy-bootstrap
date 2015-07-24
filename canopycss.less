@@ -63,6 +63,17 @@ HEADER / NAVBAR
 @navbar-text: #0066a2;
 @navbar-border: #ffffff #ffffff #0066a2 #ffffff;
 @menu-triangle-color: transparent transparent #0066a2 transparent;
+@navbar-brand-width: 178px;
+@navbar-brand-height: 52px;
+@navbar-brand-margins: 10px 0px 0px 10px;
+
+/**********************
+NAV TABS
+**********************/
+
+@nav-tabs-li-border: 1px solid #dddddd;
+@nav-tabs-border-bottom: transparent;
+@nav-tabs-cursor: default;
 
 /*******************
 FOOTER
@@ -475,9 +486,9 @@ NAVBAR
 	float: left;
 	background: @navbar-brand-logo;
 	color: @navbar-brand-text;
-	width: 178px;
-	margin-left: 15px;
-	height: 52px;
+	width: @navbar-brand-width;
+	margin-left: @navbar-brand-margins;
+	height: @navbar-brand-height;
 }
 
 .navbar-default .navbar-text {
@@ -735,9 +746,9 @@ TABS
 .nav-tabs > li.active > a:focus {
   color: @inverse-text;
   background-color: @primary;
-  border: 1px solid #dddddd;
-  border-bottom-color: transparent;
-  cursor: default;
+  border: @nav-tabs-li-border;
+  border-bottom-color: @nav-tabs-border-bottom;
+  cursor: @nav-tabs-cursor;
 }
 
 .nav-tabs > li > a {

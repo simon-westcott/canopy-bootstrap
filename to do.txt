@@ -8,6 +8,7 @@ move custom css to canopycss.less
 add in @dropdown text
 add in @disabled-dropdown-text
 
+HTML boilerplate methods
 
 
 all primary colors to #0066a2
