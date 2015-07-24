@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Stag';
+  src: local ("Stag"), 
+  src: url('/theme/Stag-Medium.eot');
+  src: url('/theme/Stag-Medium.eot?#iefix') format('eot'),
+  url('/theme/Stag-Medium.woff') format('woff'), 
+  url('/theme/Stag-Medium.ttf') format('truetype'),
+  url('/theme/Stag-Medium.svg#webfont') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
