@@ -109,7 +109,7 @@ HOW A LINK IS DISPLAYED
 DROPDOWN MENU
 *****************/
 
-@dropdown-bg: #FFFFFF;
+@dropdown-bg: #0066a2;
 @dropdown-text: @main-text;  /******** PUT IN DROPDOWN-TEXT *********/
 
 /******************
@@ -532,6 +532,11 @@ NAVBAR
 	-webkit-box-shadow: @navbar-box-shadow;
 	-moz-box-shadow: @navbar-box-shadow;
 	height: @navbar-height;
+	right: 0px;
+	top: 0px;
+	left: 0px;
+	position: fixed;
+	z-index: 4;
 }
 
 .navbar-brand {
@@ -595,6 +600,29 @@ NAVBAR
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
 	color: @inverse-text;
 	background-color: @primary-hover;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  list-style: none;
+  font-size: 15px;
+  text-align: left;
+  background-color: @dropdown-bg;
+  border: 1px solid #cccccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box;
 }
 
 /*****************
@@ -1221,6 +1249,7 @@ footer
 	position: fixed;
 	bottom: @footer-bottom;
 	text-align: @footer-text-align;
+	z-index: 2000;
 }
 
 .footer-text {
