@@ -83,8 +83,14 @@ FOOTER
 *******************/
 
 @footer-bg: #FFFFFF;
-@footer-border: #0066a2;
+@footer-height: 75px;
+@footer-width: 100%;
+@footer-border-top: 6px solid #0066a2;
 @footer-box-shadow: 0px 0px 10px 2px #000000;
+@footer-bottom: 0px;
+@footer-text-align: center;
+@footer-text-margin: auto;
+@footer-text-margin-top: 40px;
 
 /*****************
 CURSOR DISPLAYED ON A DISABLED LINK/BUTTON
@@ -1197,5 +1203,26 @@ a.list-group-item-danger.active:focus {
   border-color: @list-border;
 }
 
+/**********************
+footer
+***********************/
 
+.footer {
+	display: block;
+	height: @footer-height;
+	width: @footer-width;
+	background-color: @footer-bg;
+	border-top: @footer-border-top;
+	box-shadow: @footer-box-shadow;
+	-webkit-box-shadow: @footer-box-shadow;
+	-moz-box-shadow: @footer-box-shadow;
+	position: fixed;
+	bottom: @footer-bottom;
+	text-align: @footer-text-align;
+}
+
+.footer-text {
+	margin: @footer-text-margin;
+	margin-top: @footer-text-margin-top;
+}
 
