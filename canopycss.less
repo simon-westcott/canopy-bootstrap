@@ -74,6 +74,9 @@ NAV TABS
 @nav-tabs-li-border: 1px solid #dddddd;
 @nav-tabs-border-bottom: transparent;
 @nav-tabs-cursor: default;
+@nav-tabs-link-border: 1px solid transparent;
+@nav-tabs-link-border-radius: 0 0 0 0;
+@nav-tabs-link-hover: @bg-color @bg-color @bg-color;
 
 /*******************
 FOOTER
@@ -147,7 +150,7 @@ BUTTON HOVER COLOR
 @default-hover: transparent;
 
 /********************
-LIST COLORS
+LIST
 *********************/
 
 @menu-list-bg: #0066a2;
@@ -156,34 +159,72 @@ LIST COLORS
 @list-border: #dddddd;
 
 /*****************
-BREADCRUMB COLORS
+BREADCRUMBS
 ******************/
 
 @breadcrumb-active: #808080;
+@breadcrumb-margin: 21px;
+@breadcrumb-border-radius: 0;
 
 /******************
-TABLE COLORS
+TABLE
 *******************/
 
+@table-text: @main-text;
 @table-bg: #FFFFFF;
 
 /******************
-FORM COLORS
+FORM
 *******************/
 
 @form-bg: #FFFFFF;
+@form-control-width: 100%;
+@form-control-height: 43px;
+@form-bg-image: none;
+@form-border: 1px solid #cccccc;
+@form-border-radius: 0;
+@form-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+@form-warning-border: 1px solid @warning;
+@form-error-border: 1px solid @danger;
 
 /*******************
-WELL COLORS
+WELL
 ********************/
 
 @well-bg: #FFFFFF;
+@well-margin-bottom: 20px;
+@well-border: 1px solid #e3e3e3;
+@well-border-radius: 0;
+@well-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+@well-min-height: 20px;
+
+/******************
+PANELS
+*******************/
+
+@panel-border-color: #dddddd;
 
 /******************
 PAGE SELECTOR COLORS
 *******************/
 
 @pagination-bg: #FFFFFF;
+@pagination-hover-border-color: #dddddd;
+@pagination-hover-bg: @primary;
+@pagination-border: 1px solid #dddddd;
+
+/**********************
+PAGER
+**********************/
+
+@pager-border: 1px solid #dddddd;
+@pager-border-radius: 0;
+@pager-hover-decoration: @list-link-decoration;
+@pager-hover-text: @inverse-text;
+@pager-hover-bg: @primary;
+@pager-disabled-text: @disabled-text;
+@pager-disabled-bg: @disabled-dropdown-bg;
+@pager-disabled-cursor: @disabled-cursor;
 
 /************************************************************************************
 *************************************************************************************
@@ -754,13 +795,13 @@ TABS
 .nav-tabs > li > a {
   margin-right: 2px;
   line-height: 1.42857143;
-  border: 1px solid transparent;
-  border-radius: 0 0 0 0;
+  border: @nav-tabs-link-border;
+  border-radius: @nav-tabs-link-border-radius;
   color: @main-text;
 }
 
 .nav-tabs > li > a:hover {
-  border-color: @bg-color @bg-color @bg-color;
+  border-color: @nav-tabs-link-hover;
 }
 
 /********************
@@ -775,8 +816,8 @@ PAGINATION
 .pagination > li > span:focus {
   z-index: 3;
   color: @inverse-text;
-  background-color: @primary;
-  border-color: #dddddd;
+  background-color: @pagination-hover-bg;
+  border-color: @pagination-hover-border-color;
 }
 
 .pagination > li > a,
@@ -788,7 +829,7 @@ PAGINATION
   text-decoration: none;
   color: @main-text;
   background-color: @pagination-bg;
-  border: 1px solid #dddddd;
+  border: @pagination-border;
   margin-left: -1px;
 }
 
@@ -800,10 +841,10 @@ BREADCRUMBS
 
 .breadcrumb {
   padding: 8px 15px;
-  margin-bottom: 21px;
+  margin-bottom: @breadcrumb-margin;
   list-style: none;
   background-color: @bg-color;
-  border-radius: 0;
+  border-radius: @breadcrumb-border-radius;
 }
 
 .breadcrumb > li + li:before {
@@ -827,23 +868,23 @@ Pager
   padding: 5px 14px;
   background-color: @dropdown-bg;
   color: @main-text;
-  border: 1px solid #dddddd;
-  border-radius: 0;
+  border: @pager-border;
+  border-radius: @pager-border-radius;
 }
 .pager li > a:hover,
 .pager li > a:focus {
-  text-decoration: @list-link-decoration;
-  color: @inverse-text;
-  background-color: @primary;
+  text-decoration: @pager-hover-decoration;
+  color: @pager-hover-text;
+  background-color: @pager-hover-bg;
 }
 
 .pager .disabled > a,
 .pager .disabled > a:hover,
 .pager .disabled > a:focus,
 .pager .disabled > span {
-  color: @disabled-text;
-  background-color: @disabled-dropdown-bg;
-  cursor: @disabled-cursor;
+  color: @pager-disabled-text;
+  background-color: @pager-disabled-bg;
+  cursor: @pager-disabled-cursor;
 }
 
 /**********************
@@ -854,7 +895,7 @@ TABLES
 
 .table .table {
   background-color: @table-bg;
-  color: @main-text;
+  color: @table-text;
 }
 
 .table > thead > tr > td.info,
@@ -941,7 +982,7 @@ PANELS
 .panel-default > .panel-heading {
   color: @main-text;
   background-color: @bg-color;
-  border-color: #dddddd;
+  border-color: @panel-border-color;
   font-family: @header-font;
 }
 
@@ -976,7 +1017,7 @@ PANELS
 .panel-danger > .panel-heading {
   color: @inverse-text;
   background-color: @danger;
-  border-color: #f0005e;
+  border-color: @danger;
   font-family: @header-font;
 }
 .panel-danger > .panel-heading + .panel-collapse > .panel-body {
@@ -1038,18 +1079,18 @@ FORMS
 
 .form-control {
   display: block;
-  width: 100%;
-  height: 43px;
+  width: @form-control-width;
+  height: @form-control-height;
   padding: 10px 18px;
   font-size: 15px;
   line-height: 1.42857143;
   color: @main-text;
   background-color: @form-bg;
-  background-image: none;
-  border: 1px solid #cccccc;
-  border-radius: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  background-image: @form-bg-image;
+  border: @form-border;
+  border-radius: @form-border-radius;
+  -webkit-box-shadow: @form-box-shadow;
+  box-shadow: @form-box-shadow;
   -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
@@ -1083,7 +1124,7 @@ FORMS
 .has-warning .form-control,
 .has-warning .form-control:focus,
 .has-warning .input-group-addon {
-  border: 1px solid @warning;
+  border: @form-warning-border;
 }
 .has-error .help-block,
 .has-error .control-label,
@@ -1101,18 +1142,18 @@ FORMS
 .has-error .form-control,
 .has-error .form-control:focus,
 .has-error .input-group-addon {
-  border: 1px solid @danger;
+  border: @form-error-border;
 }
 
 .well {
-  min-height: 20px;
+  min-height: @well-min-height;
   padding: 19px;
-  margin-bottom: 20px;
+  margin-bottom: @well-margin-bottom;
   background-color: @well-bg;
-  border: 1px solid #e3e3e3;
-  border-radius: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  border: @well-border;
+  border-radius: @well-border-radius;
+  -webkit-box-shadow: @well-box-shadow;
+  box-shadow: @well-box-shadow;
 
   /*******************
   ********************
