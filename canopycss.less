@@ -112,6 +112,12 @@ BUTTON/COLORED AREA BACKGROUNDS
 @default: transparent;
 @disabled: #000000;
 
+/*********************
+BUTTON TEXT DECORATION
+**********************/
+
+@btn-hover-text-decoration: none;
+
 /****************
 DISABLED AREA TEXT COLOR
 ******************/
@@ -406,7 +412,7 @@ fieldset[disabled] .btn-default.active {
 .btn:hover,
 .btn:focus,
 .btn.focus {
-  text-decoration: none;
+  text-decoration: @btn-hover-text-decoration;
 }
 
 .btn-link {
