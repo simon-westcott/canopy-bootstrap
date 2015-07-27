@@ -128,7 +128,7 @@ BUTTON/COLORED AREA BACKGROUNDS
 @info: #7a42b3;
 @warning: #ff683b;
 @danger: #ff0000;
-@success:;
+@success: #3fb618;
 @primary: #0066a2;
 @default: transparent;
 @disabled: #000000;
@@ -153,7 +153,7 @@ BUTTON HOVER COLOR
 @info-hover: #583081;
 @warning-hover: #E65E35;
 @danger-hover: #CC0000;
-@success-hover:;
+@success-hover: #2f8912;
 @primary-hover: #004A75;
 @default-hover: transparent;
 
@@ -504,6 +504,53 @@ fieldset[disabled] .btn-default.active {
 	margin-left: 0px;
 }
 
+}
+.btn-success {
+  color: @inverse-text;
+  background-color: @success;
+  border-color: @success;
+}
+.btn-success:focus,
+.btn-success.focus {
+  color: @inverse-text;
+  background-color: @success;
+  border-color: @success;
+}
+.btn-success:hover {
+  color: @inverse-text;
+  background-color: @success-hover;
+  border-color: @success-hover;
+}
+.btn-success:active,
+.btn-success.active,
+.open > .dropdown-toggle.btn-success {
+  color: @inverse-text;
+  background-color: @success-hover;
+  border-color: @success-hover;
+}
+.btn-success:active:hover,
+.btn-success.active:hover,
+.open > .dropdown-toggle.btn-success:hover,
+.btn-success:active:focus,
+.btn-success.active:focus,
+.open > .dropdown-toggle.btn-success:focus,
+.btn-success:active.focus,
+.btn-success.active.focus,
+.open > .dropdown-toggle.btn-success.focus {
+  color: @inverse-text;
+  background-color: @success-hover;
+  border-color: @success-hover;
+}
+.btn-success:active,
+.btn-success.active,
+.open > .dropdown-toggle.btn-success {
+  background-image: none;
+}
+.btn-success .badge {
+  color: @success;
+  background-color: @pager-bg;
+}
+
 /************
 menu triangles
 ***********/
@@ -798,6 +845,15 @@ LABELS
 
 .label-danger {
   background-color: @danger;
+}
+
+.label-success {
+  background-color: @success;
+}
+
+.label-success[href]:hover,
+.label-success[href]:focus {
+  background-color: @success-hover;
 }
 
 /*********************
