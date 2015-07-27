@@ -10,16 +10,16 @@ DO NOT REMOVE THE ?#iefix OR THE #webfont SUFFIX
   font-weight: 400;
   font-style: normal;
 }
-/*********************	
+/***********************	
 PAGE BACKGROUND COLOR
-*********************/
+***********************/
 /*********************
 MAIN FONT COLOR
 *********************/
-/*********************
+/*****************************************************************
 SECONDARY FONT COLOR 
 THIS IS THE ONE WE'VE USED TO DISPLAY ON BUTTONS/COLORED OBJECTS
-*********************/
+*****************************************************************/
 /********************
 MAIN FONT
 *********************/
@@ -1048,5 +1048,9 @@ footer
 }
 .footer-text {
   margin: auto;
+  margin-top: 20px;
+}
+.login-page {
+  top: 92px;
   margin-top: 20px;
 }
