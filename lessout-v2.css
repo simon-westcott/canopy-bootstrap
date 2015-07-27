@@ -399,6 +399,9 @@ NAVBAR
   color: #0066a2;
   border-style: solid;
   border-bottom-width: 6px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
   border-color: #ffffff #ffffff #0066a2 #ffffff;
   box-shadow: 0px 2px 10px #000000;
   -webkit-box-shadow: 0px 2px 10px #000000;
@@ -415,7 +418,7 @@ NAVBAR
   background: url("http://canopy-cloud.com/sites/all/themes/canopytheme/images/logo.png") no-repeat;
   color: transparent;
   width: 178px;
-  margin: 10px 0px 0px 10px;
+  margin: 15px 0px 0px 20px;
   height: 52px;
 }
 .navbar-default .navbar-text {
@@ -1045,6 +1048,7 @@ footer
   left: 0px;
   text-align: center;
   z-index: 2000;
+  margin-top: 0px;
 }
 .footer-text {
   margin: auto;
@@ -1053,4 +1057,6 @@ footer
 .login-page {
   top: 92px;
   margin-top: 20px;
+  height: 100%;
+  margin-bottom: 0px;
 }
