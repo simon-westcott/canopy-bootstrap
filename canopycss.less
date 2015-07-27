@@ -64,7 +64,11 @@ HEADER / NAVBAR
 @navbar-border: #ffffff #ffffff #0066a2 #ffffff;
 @navbar-brand-width: 178px;
 @navbar-brand-height: 52px;
-@navbar-brand-margins: 10px 0px 0px 10px;
+@navbar-brand-margins: 15px 0px 0px 20px;
+@navbar-border-lef-width: 0px;
+@navbar-border-lef-width: 0px;
+@navbar-border-lef-width: 0px;
+
 
 /************************
 MENU DROPDOWN TRIANGLE
@@ -618,6 +622,9 @@ NAVBAR
 	color: @main-text;
 	border-style: @navbar-border-style;
     border-bottom-width: @navbar-bottom-border-width;
+    border-left-width: @navbar-border-lef-width;
+    border-right-width: @navbar-border-lef-width;
+    border-top-width: @navbar-border-lef-width;
 	border-color: @navbar-border;
 	box-shadow: @navbar-box-shadow;
 	-webkit-box-shadow: @navbar-box-shadow;
@@ -1351,6 +1358,7 @@ footer
 	left: @footer-left;
 	text-align: @footer-text-align;
 	z-index: 2000;
+	margin-top: 0px;
 }
 
 .footer-text {
@@ -1361,4 +1369,6 @@ footer
 .login-page {
 	top: @navbar-height;
 	margin-top: 20px;
+	height: 100%;
+	margin-bottom: 0px;
 }
