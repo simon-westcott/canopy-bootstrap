@@ -3,251 +3,99 @@ FONT
 YOU MUST HAVE THE .EOT, .WOFF, .TTF AND .SVG FILES LINKED EITHER REMOTELY OR LOCALLY
 DO NOT REMOVE THE ?#iefix OR THE #webfont SUFFIX
 ******************/
-
 @font-face {
-  font-family: 'Stag'; 
-  src: url('font/Stag-Medium.eot');
-  src: url('font/Stag-Medium.eot?#iefix') format('eot'),
-  url('font/Stag-Medium.woff') format('woff'), 
-  url('font/Stag-Medium.ttf') format('truetype'),
-  url('font/Stag-Medium.svg#webfont') format('svg');
+  font-family: 'Stag';
+  src: url('theme/Stag-Medium.eot');
+  src: url('theme/Stag-Medium.eot?#iefix') format('eot'), url('theme/Stag-Medium.woff') format('woff'), url('theme/Stag-Medium.ttf') format('truetype'), url('theme/Stag-Medium.svg#webfont') format('svg');
   font-weight: 400;
   font-style: normal;
 }
-
 /*********************	
 PAGE BACKGROUND COLOR
 *********************/
-
-@bg-color: #f6f5f5;
-@body-padding: 0px 100px 0px 100px;
-
 /*********************
 MAIN FONT COLOR
 *********************/
-
-@main-text: #0066a2;
-
 /*********************
 SECONDARY FONT COLOR 
 THIS IS THE ONE WE'VE USED TO DISPLAY ON BUTTONS/COLORED OBJECTS
 *********************/
-
-@inverse-text: #FFFFFF;
-
 /********************
 MAIN FONT
 *********************/
-
-@main-font: Verdana, Arial;
-
 /*******************
 HEADING / TITLE FONT
 IF IT'S A CUSTOM FONT THE @font-face FILE LINKS AT THE TOP OF THIS FILE SHOULD ALSO BE EDITED
 ********************/
-
-@header-font: Stag;
-
 /*********************
 HEADER / NAVBAR
 **********************/
-
-@navbar-bg: #FFFFFF;
-@navbar-height: 92px;
-@navbar-box-shadow: 0px 2px 10px #000000;
-@navbar-border-color: #0066a2;
-@navbar-border-style: solid;
-@navbar-bottom-border-width: 6px;
-@navbar-brand-text: transparent;
-@navbar-brand-logo: url("http://canopy-cloud.com/sites/all/themes/canopytheme/images/logo.png") no-repeat;
-@navbar-text: #0066a2;
-@navbar-border: #ffffff #ffffff #0066a2 #ffffff;
-@menu-triangle-color: transparent transparent #0066a2 transparent;
-@navbar-brand-width: 178px;
-@navbar-brand-height: 52px;
-@navbar-brand-margins: 10px 0px 0px 10px;
-
 /**********************
 NAV TABS
 **********************/
-
-@nav-tabs-li-border: 1px solid #dddddd;
-@nav-tabs-border-bottom: transparent;
-@nav-tabs-cursor: default;
-@nav-tabs-link-border: 1px solid transparent;
-@nav-tabs-link-border-radius: 0 0 0 0;
-@nav-tabs-link-hover: @bg-color @bg-color @bg-color;
-
 /*******************
 FOOTER
 *******************/
-
-@footer-bg: #FFFFFF;
-@footer-height: 60px;
-@footer-width: 100%;
-@footer-border-top: 6px solid #0066a2;
-@footer-box-shadow: 0px 0px 10px 2px #000000;
-@footer-bottom: 0px;
-@footer-left: 0px;
-@footer-text-align: center;
-@footer-text-margin: auto;
-@footer-text-margin-top: 20px;
-
 /*****************
 CURSOR DISPLAYED ON A DISABLED LINK/BUTTON
 *****************/
-
-@disabled-cursor: not-allowed;
-
 /****************
 HOW A LINK IS DISPLAYED
 ****************/
-
-@link-text: #0066a2;
-@link-text-bg: transparent;
-@link-decoration: underline;
-
 /****************
 DROPDOWN MENU
 *****************/
-
-@dropdown-bg: #0066a2;
-@dropdown-text: @main-text;  /******** PUT IN DROPDOWN-TEXT *********/
-
+/******** PUT IN DROPDOWN-TEXT *********/
 /******************
 DISABLED DROPDOWN MENU
 *******************/
-
-@disabled-dropdown-bg: #FFFFFF;
-@disabled-dropdown-text: @disabled-text; /********** PUT IN @DISABLED-DROPDOWN-TEXT **********/
-
+/********** PUT IN @DISABLED-DROPDOWN-TEXT **********/
 /*******************
 BUTTON/COLORED AREA BACKGROUNDS
 ********************/
-
-@info: #7a42b3;
-@warning: #ff683b;
-@danger: #ff0000;
-@success:;
-@primary: #0066a2;
-@default: transparent;
-@disabled: #000000;
-
 /*********************
 BUTTON TEXT DECORATION
 **********************/
-
-@btn-hover-text-decoration: none;
-@btn-text: @inverse-text;
-
 /****************
 DISABLED AREA TEXT COLOR
 ******************/
-
-@disabled-text: #808080;
-
 /*******************
 BUTTON HOVER COLOR
 ********************/
-
-@info-hover: #583081;
-@warning-hover: #E65E35;
-@danger-hover: #CC0000;
-@success-hover:;
-@primary-hover: #004A75;
-@default-hover: transparent;
-
 /********************
 LIST
 *********************/
-
-@menu-list-bg: #0066a2;
-@list-group-heading-text: #0066a2;
-@list-link-decoration: none;
-@list-border: #dddddd;
-
 /*****************
 BREADCRUMBS
 ******************/
-
-@breadcrumb-active: #808080;
-@breadcrumb-margin: 21px;
-@breadcrumb-border-radius: 0;
-
 /******************
 TABLE
 *******************/
-
-@table-text: @main-text;
-@table-bg: #FFFFFF;
-
 /******************
 FORM
 *******************/
-
-@form-bg: #FFFFFF;
-@form-control-width: 100%;
-@form-control-height: 43px;
-@form-bg-image: none;
-@form-border: 1px solid #cccccc;
-@form-border-radius: 0;
-@form-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-@form-warning-border: 1px solid @warning;
-@form-error-border: 1px solid @danger;
-
 /*******************
 WELL
 ********************/
-
-@well-bg: #FFFFFF;
-@well-margin-bottom: 20px;
-@well-border: 1px solid #e3e3e3;
-@well-border-radius: 0;
-@well-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-@well-min-height: 20px;
-
 /******************
 PANELS
 *******************/
-
-@panel-border-color: #dddddd;
-
 /******************
 PAGE SELECTOR COLORS
 *******************/
-
-@pagination-bg: #FFFFFF;
-@pagination-hover-border-color: #dddddd;
-@pagination-hover-bg: @primary;
-@pagination-border: 1px solid #dddddd;
-
 /**********************
 PAGER
 **********************/
-
-@pager-bg: #FFFFFF;
-@pager-border: 1px solid #dddddd;
-@pager-border-radius: 0;
-@pager-hover-decoration: @list-link-decoration;
-@pager-hover-text: @inverse-text;
-@pager-hover-bg: @primary;
-@pager-disabled-text: @disabled-text;
-@pager-disabled-bg: @disabled-dropdown-bg;
-@pager-disabled-cursor: @disabled-cursor;
-
 /************************************************************************************
 *************************************************************************************
 UNLESS ADDING FULLY CUSTOM CSS, THERE SHOULD BE NO NEED TO EDIT ANYTHING BELOW HERE
 *************************************************************************************
 *************************************************************************************/
-
 body {
-	background-color: @bg-color;
-	color: @main-text;
-  	font-family: @main-font;
-  	padding: @body-padding;
+  background-color: #f6f5f5;
+  color: #0066a2;
+  font-family: Verdana, Arial;
 }
-
 legend {
   display: block;
   width: 100%;
@@ -255,125 +103,105 @@ legend {
   margin-bottom: 21px;
   font-size: 22.5px;
   line-height: inherit;
-  color: @main-text;
+  color: #0066a2;
   border: 0;
   border-bottom: 1px solid #e5e5e5;
 }
-
 a {
-  color: @main-text;
+  color: #0066a2;
   text-decoration: none;
 }
-
 blockquote footer,
 blockquote small,
 blockquote .small {
   display: block;
   font-size: 80%;
   line-height: 1.42857143;
-  color: @main-text !important;
+  color: #0066a2 !important;
 }
-
 h1 {
-  font-family: @header-font;
+  font-family: Stag;
 }
-
 h2 {
-  font-family: @header-font;
+  font-family: Stag;
 }
-
 h3 {
-  font-family: @header-font;
+  font-family: Stag;
 }
-
 h4 {
-  font-family: @header-font;
+  font-family: Stag;
 }
-
 h5 {
-	font-family: @header-font;
+  font-family: Stag;
 }
-
 /**********************
 ***********************
 MISC
 ***********************
 **********************/
-
 .badge {
   display: inline-block;
   min-width: 10px;
   padding: 3px 7px;
   font-size: 13px;
   font-weight: bold;
-  color: @btn-text;
+  color: #ffffff;
   line-height: 1;
   vertical-align: middle;
   white-space: nowrap;
   text-align: center;
-  background-color: @primary;
+  background-color: #0066a2;
   border-radius: 10px;
 }
-
 /*******************
 ********************
 TEXT
 ********************
 *******************/
-
 .text-primary,
 .text-primary:hover {
-  color: @primary;
+  color: #0066a2;
 }
-
 .text-danger,
 .text-danger:hover {
-  color: @danger;
+  color: #ff0000;
 }
-
 .text-warning,
 .text-warning:hover {
-  color: @warning;
+  color: #ff683b;
 }
-
 .text-info,
 .text-info:hover {
-  color: @info;
+  color: #7a42b3;
 }
-
 /*********************
 **********************
 BUTTONS
 **********************
 *********************/
-
 .btn-default {
-	background-color: @default;
-	border-color: @default;
-	color: @main-text;
+  background-color: transparent;
+  border-color: transparent;
+  color: #0066a2;
 }
-
-.btn-default:hover{
-	background-color: @default;
-	border-color: @default;
-	color: @main-text;
+.btn-default:hover {
+  background-color: transparent;
+  border-color: transparent;
+  color: #0066a2;
 }
-
 .btn-default:focus,
 .btn-default.focus {
-  color: @main-text;
-  background-color: @default;
-  border-color: @default;
+  color: #0066a2;
+  background-color: transparent;
+  border-color: transparent;
 }
-
 .btn-default:active,
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
-  color: @main-text;
-  background-color: @default;
-  border-color: @default;
+  color: #0066a2;
+  background-color: transparent;
+  border-color: transparent;
 }
-
 .btn-default:active:hover,
 .btn-default.active:hover,
 .open > .dropdown-toggle.btn-default:hover,
@@ -383,11 +211,10 @@ BUTTONS
 .btn-default:active.focus,
 .btn-default.active.focus,
 .open > .dropdown-toggle.btn-default.focus {
-  color: @main-text;
-  background-color: @default;
-  border-color: @default;
+  color: #0066a2;
+  background-color: transparent;
+  border-color: transparent;
 }
-
 .btn-default.disabled,
 .btn-default[disabled],
 fieldset[disabled] .btn-default,
@@ -406,49 +233,40 @@ fieldset[disabled] .btn-default:active,
 .btn-default.disabled.active,
 .btn-default[disabled].active,
 fieldset[disabled] .btn-default.active {
-  background-color: @disabled;
-  color: @inverse-text;
+  background-color: #000000;
+  color: #ffffff;
 }
-
 .btn-primary {
-	background-color: @primary;
- 	border-color: @primary;
+  background-color: #0066a2;
+  border-color: #0066a2;
 }
-
 .btn-primary:hover {
-	background-color: @primary-hover;
+  background-color: #004a75;
 }
-
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-  color: @inverse-text;
-  background-color: @primary;
+  color: #ffffff;
+  background-color: #0066a2;
 }
-
 .btn-danger {
-	background-color: @danger;
+  background-color: #ff0000;
 }
-
 .btn-danger:hover {
-	background-color: @danger-hover;
+  background-color: #cc0000;
 }
-
 .btn-warning {
-	background-color: @warning;
+  background-color: #ff683b;
 }
-
 .btn-warning:hover {
-	background-color: @warning-hover;
+  background-color: #e65e35;
 }
 .btn-info {
-	background-color: @info;
+  background-color: #7a42b3;
 }
-
 .btn-info:hover {
-	background-color: @info-hover;
+  background-color: #583081;
 }
-
 .btn {
   display: inline-block;
   margin-bottom: 0;
@@ -456,7 +274,7 @@ fieldset[disabled] .btn-default.active {
   text-align: center;
   vertical-align: middle;
   -ms-touch-action: manipulation;
-      touch-action: manipulation;
+  touch-action: manipulation;
   cursor: pointer;
   background-image: none;
   border: 1px solid transparent;
@@ -470,399 +288,313 @@ fieldset[disabled] .btn-default.active {
   -ms-user-select: none;
   user-select: none;
 }
-
 .btn:hover,
 .btn:focus,
 .btn.focus {
-  text-decoration: @btn-hover-text-decoration;
+  text-decoration: none;
 }
-
 .btn-link {
-  color: @link-text;
+  color: #0066a2;
   font-weight: normal;
   border-radius: 0;
 }
-
 .btn-link:hover,
 .btn-link:focus {
-  color: @link-text;
-  text-decoration: @link-decoration;
-  background-color: @link-text-bg;
+  color: #0066a2;
+  text-decoration: underline;
+  background-color: transparent;
 }
-
 .navbar-default .btn-link {
-  color: @link-text;
+  color: #0066a2;
 }
 .navbar-default .btn-link:hover,
 .navbar-default .btn-link:focus {
-  color: @link-text;
-  text-decoration: @link-decoration;
+  color: #0066a2;
+  text-decoration: underline;
 }
-
-.navbar > .container .navbar-brand,
-.navbar > .container-fluid .navbar-brand {
-	margin-left: 0px;
-}
-
 /************
 menu triangles
 ***********/
-
 .navbar-default .navbar-nav .open .dropdown-menu:before {
-	content: ' ';
-	position: absolute;
-	width: 0;
-	height: 0;
-	bottom: 100%;
-	left: 40%;
-	border: 10px solid;
-	border-color: @menu-triangle-color;
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 100%;
+  left: 40%;
+  border: 10px solid;
+  border-color: transparent transparent #0066a2 transparent;
 }
-
 /********************
 *********************
 NAVBAR
 *********************
 ********************/
-
 .navbar-default {
-    display:block;
-	background-color: @navbar-bg;
-	color: @main-text;
-	border-style: @navbar-border-style;
-    border-bottom-width: @navbar-bottom-border-width;
-	border-color: @navbar-border;
-	box-shadow: @navbar-box-shadow;
-	-webkit-box-shadow: @navbar-box-shadow;
-	-moz-box-shadow: @navbar-box-shadow;
-	height: @navbar-height;
-	right: 0px;
-	top: 0px;
-	left: 0px;
-	position: fixed;
-	z-index: 4;
+  display: block;
+  background-color: #ffffff;
+  color: #0066a2;
+  border-style: solid;
+  border-bottom-width: 6px;
+  border-color: #ffffff #ffffff #0066a2 #ffffff;
+  box-shadow: 2px 10px #000000;
+  -webkit-box-shadow: 2px 10px #000000;
+  -moz-box-shadow: 2px 10px #000000;
+  height: 92px;
 }
-
 .navbar-brand {
-	float: left;
-	background: @navbar-brand-logo;
-	color: @navbar-brand-text;
-	width: @navbar-brand-width;
-	margin: @navbar-brand-margins;
-	height: @navbar-brand-height;
+  float: left;
+  background: url("http://canopy-cloud.com/sites/all/themes/canopytheme/images/logo.png") no-repeat;
+  color: transparent;
+  width: 178px;
+  margin-left: 10px 0px 0px 10px;
+  height: 52px;
 }
-
 .navbar-default .navbar-text {
-	color: @navbar-text;
+  color: #0066a2;
 }
-
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
   border-color: none;
 }
-
 .navbar-default .navbar-text {
-  color: @navbar-text;
-  font: @header-font;
+  color: #0066a2;
+  font: Stag;
 }
 .navbar-default .navbar-nav > li > a {
-  color: @navbar-text;
+  color: #0066a2;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: @navbar-text;
-  background-color: @navbar-bg;
+  color: #0066a2;
+  background-color: #ffffff;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: @navbar-text;
-  background-color: @navbar-bg;
+  color: #0066a2;
+  background-color: #ffffff;
 }
-
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: @navbar-text;
-  background-color: @navbar-bg;
+  color: #0066a2;
+  background-color: #ffffff;
   text-decoration: none;
 }
-
 .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-	color: @inverse-text;
-	background-color: @primary;
+  color: #ffffff;
+  background-color: #0066a2;
 }
-
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-	color: @inverse-text;
-	background-color: @primary-hover;
+  color: #ffffff;
+  background-color: #004a75;
 }
-
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-	color: @inverse-text;
-	background-color: @primary-hover;
+  color: #ffffff;
+  background-color: #004a75;
 }
-
-.dropdown-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 1000;
-  display: none;
-  float: left;
-  min-width: 160px;
-  padding: 5px 0;
-  margin: 2px 0 0;
-  list-style: none;
-  font-size: 15px;
-  text-align: left;
-  background-color: @dropdown-bg;
-  border: 1px solid #cccccc;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 0;
-  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  -webkit-background-clip: padding-box;
-          background-clip: padding-box;
-}
-
 /*****************
 ******************
 PROGRESS BAR
 ******************
 *****************/
-
 .progress-bar {
   float: left;
   width: 0%;
   height: 100%;
   font-size: 13px;
   line-height: 21px;
-  color: @inverse-text;
+  color: #ffffff;
   text-align: center;
-  background-color: @primary;
+  background-color: #0066a2;
   -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   -webkit-transition: width 0.6s ease;
   -o-transition: width 0.6s ease;
   transition: width 0.6s ease;
 }
-
 .progress-bar-danger {
-  background-color: @danger;
+  background-color: #ff0000;
 }
-
 .progress-bar-warning {
-  background-color: @warning;
+  background-color: #ff683b;
 }
-
 .progress-bar-info {
-	background-color: @info;
+  background-color: #7a42b3;
 }
-
 /*************************
 **************************
 LIST GROUPS
 **************************
 *************************/
-
 a.list-group-item .list-group-item-heading,
 button.list-group-item .list-group-item-heading {
-  color: @list-group-heading-text;
-  font-family: @header-font;
+  color: #0066a2;
+  font-family: Stag;
 }
-
 .list-group-item.active,
 .list-group-item.active:hover,
 .list-group-item.active:focus {
   z-index: 2;
-  color: @inverse-text;
-  background-color: @primary;
-  border-color: @primary;
+  color: #ffffff;
+  background-color: #0066a2;
+  border-color: #0066a2;
 }
-
 a.list-group-item:hover,
 button.list-group-item:hover,
 a.list-group-item:focus,
 button.list-group-item:focus {
   text-decoration: none;
-  color: @main-text;
-  background-color: @bg-color;
+  color: #0066a2;
+  background-color: #f6f5f5;
 }
-
-
 a.list-group-item,
 button.list-group-item {
-  color: @main-text;
+  color: #0066a2;
 }
-
 .list-group-item-warning {
-	color: @inverse-text;
-	background-color: @warning;
+  color: #ffffff;
+  background-color: #ff683b;
 }
-
 a.list-group-item-warning:hover,
 button.list-group-item-warning:hover,
 a.list-group-item-warning:focus,
 button.list-group-item-warning:focus {
-  color: @inverse-text;
-  background-color: @warning-hover;
+  color: #ffffff;
+  background-color: #e65e35;
 }
-
 .list-group-item-danger {
-  color: @inverse-text;
-  background-color: @danger;
+  color: #ffffff;
+  background-color: #ff0000;
 }
 a.list-group-item-danger:hover,
 button.list-group-item-danger:hover,
 a.list-group-item-danger:focus,
 button.list-group-item-danger:focus {
-  color: @inverse-text;
-  background-color: @danger-hover;
+  color: #ffffff;
+  background-color: #cc0000;
 }
-
 .list-group-item-info {
-  color: @inverse-text;
-  background-color: @info;
+  color: #ffffff;
+  background-color: #7a42b3;
 }
 a.list-group-item-info:hover,
 button.list-group-item-info:hover,
 a.list-group-item-info:focus,
 button.list-group-item-info:focus {
-  color: @inverse-text;
-  background-color: @info-hover;
+  color: #ffffff;
+  background-color: #583081;
 }
-
 .help-block {
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: @main-text;
+  color: #0066a2;
 }
-
 /********************
 *********************
 ALERTS
 *********************
 ********************/
-
 .alert-danger {
-  background-color: @danger;
-  border-color: @danger;
-  color: @inverse-text;
+  background-color: #ff0000;
+  border-color: #ff0000;
+  color: #ffffff;
 }
-
 .alert-warning {
-  background-color: @warning;
-  border-color: @warning;
-  color: @inverse-text;
+  background-color: #ff683b;
+  border-color: #ff683b;
+  color: #ffffff;
 }
-
 .alert-info {
-  background-color: @info;
-  border-color: @info;
-  color: @inverse-text;
+  background-color: #7a42b3;
+  border-color: #7a42b3;
+  color: #ffffff;
 }
-
 /*******************
 ********************
 LABELS
 ********************
 *******************/
-
 .label-default {
-  background-color: @default;
-  color: @main-text;
+  background-color: transparent;
+  color: #0066a2;
 }
-
 .label-default[href]:hover,
 .label-default[href]:focus {
-  background-color: @primary;
-  color: @inverse-text;
+  background-color: #0066a2;
+  color: #ffffff;
 }
-
 .label-primary {
-  background-color: @primary;
+  background-color: #0066a2;
 }
-
 .label-info {
-  background-color: @info;
+  background-color: #7a42b3;
 }
-
 .label-warning {
-  background-color: @warning;
+  background-color: #ff683b;
 }
-
 .label-danger {
-  background-color: @danger;
+  background-color: #ff0000;
 }
-
 /*********************
 **********************
 PILLS AND BADGES
 **********************
 *********************/
-
 .list-group-item.active > .badge,
 .nav-pills > .active > a > .badge {
-  color: @main-text;
-  background-color: @dropdown-bg;
+  color: #0066a2;
+  background-color: #ffffff;
 }
-
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
-  color: @inverse-text;
-  background-color: @primary;
+  color: #ffffff;
+  background-color: #0066a2;
 }
-
 /******************
 *******************
 TABS
 *******************
 ******************/
-
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
-  color: @inverse-text;
-  background-color: @primary;
-  border: @nav-tabs-li-border;
-  border-bottom-color: @nav-tabs-border-bottom;
-  cursor: @nav-tabs-cursor;
+  color: #ffffff;
+  background-color: #0066a2;
+  border: 1px solid #dddddd;
+  border-bottom-color: transparent;
+  cursor: default;
 }
-
 .nav-tabs > li > a {
   margin-right: 2px;
   line-height: 1.42857143;
-  border: @nav-tabs-link-border;
-  border-radius: @nav-tabs-link-border-radius;
-  color: @main-text;
+  border: 1px solid transparent;
+  border-radius: 0 0 0 0;
+  color: #0066a2;
 }
-
 .nav-tabs > li > a:hover {
-  border-color: @nav-tabs-link-hover;
+  border-color: #f6f5f5 #f6f5f5 #f6f5f5;
 }
-
 /********************
 *********************
 PAGINATION
 *********************
 ********************/
-
 .pagination > li > a:hover,
 .pagination > li > span:hover,
 .pagination > li > a:focus,
 .pagination > li > span:focus {
   z-index: 3;
-  color: @inverse-text;
-  background-color: @pagination-hover-bg;
-  border-color: @pagination-hover-border-color;
+  color: #ffffff;
+  background-color: #0066a2;
+  border-color: #dddddd;
 }
-
 .pagination > li > a,
 .pagination > li > span {
   position: relative;
@@ -870,77 +602,68 @@ PAGINATION
   padding: 10px 18px;
   line-height: 1.42857143;
   text-decoration: none;
-  color: @main-text;
-  background-color: @pagination-bg;
-  border: @pagination-border;
+  color: #0066a2;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
   margin-left: -1px;
 }
-
 /**********************
 ***********************
 BREADCRUMBS
 ***********************
 **********************/
-
 .breadcrumb {
   padding: 8px 15px;
-  margin-bottom: @breadcrumb-margin;
+  margin-bottom: 21px;
   list-style: none;
-  background-color: @bg-color;
-  border-radius: @breadcrumb-border-radius;
+  background-color: #f6f5f5;
+  border-radius: 0;
 }
-
 .breadcrumb > li + li:before {
   content: "/\00a0";
   padding: 0 5px;
-  color: @main-text;
+  color: #0066a2;
 }
 .breadcrumb > .active {
-  color: @breadcrumb-active;
+  color: #808080;
 }
-
 /********************
 *********************
 Pager
 *********************
 ********************/
-
 .pager li > a,
 .pager li > span {
   display: inline-block;
   padding: 5px 14px;
-  background-color: @pager-bg;
-  color: @main-text;
-  border: @pager-border;
-  border-radius: @pager-border-radius;
+  background-color: #ffffff;
+  color: #0066a2;
+  border: 1px solid #dddddd;
+  border-radius: 0;
 }
 .pager li > a:hover,
 .pager li > a:focus {
-  text-decoration: @pager-hover-decoration;
-  color: @pager-hover-text;
-  background-color: @pager-hover-bg;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #0066a2;
 }
-
 .pager .disabled > a,
 .pager .disabled > a:hover,
 .pager .disabled > a:focus,
 .pager .disabled > span {
-  color: @pager-disabled-text;
-  background-color: @pager-disabled-bg;
-  cursor: @pager-disabled-cursor;
+  color: #808080;
+  background-color: #ffffff;
+  cursor: not-allowed;
 }
-
 /**********************
 ***********************
 TABLES
 ***********************
 **********************/
-
 .table .table {
-  background-color: @table-bg;
-  color: @table-text;
+  background-color: #ffffff;
+  color: #0066a2;
 }
-
 .table > thead > tr > td.info,
 .table > tbody > tr > td.info,
 .table > tfoot > tr > td.info,
@@ -953,19 +676,17 @@ TABLES
 .table > thead > tr.info > th,
 .table > tbody > tr.info > th,
 .table > tfoot > tr.info > th {
-  background-color: @info;
-  color: @inverse-text;
+  background-color: #7a42b3;
+  color: #ffffff;
 }
-
 .table-hover > tbody > tr > td.info:hover,
 .table-hover > tbody > tr > th.info:hover,
 .table-hover > tbody > tr.info:hover > td,
 .table-hover > tbody > tr:hover > .info,
 .table-hover > tbody > tr.info:hover > th {
-  background-color: @info-hover;
-  color: @inverse-text;
+  background-color: #583081;
+  color: #ffffff;
 }
-
 .table > thead > tr > td.warning,
 .table > tbody > tr > td.warning,
 .table > tfoot > tr > td.warning,
@@ -978,19 +699,17 @@ TABLES
 .table > thead > tr.warning > th,
 .table > tbody > tr.warning > th,
 .table > tfoot > tr.warning > th {
-  background-color: @warning;
-  color: @inverse-text;
+  background-color: #ff683b;
+  color: #ffffff;
 }
-
 .table-hover > tbody > tr > td.warning:hover,
 .table-hover > tbody > tr > th.warning:hover,
 .table-hover > tbody > tr.warning:hover > td,
 .table-hover > tbody > tr:hover > .warning,
 .table-hover > tbody > tr.warning:hover > th {
-  background-color: @warning-hover;
-  color: @inverse-text;
+  background-color: #e65e35;
+  color: #ffffff;
 }
-
 .table > thead > tr > td.danger,
 .table > tbody > tr > td.danger,
 .table > tfoot > tr > td.danger,
@@ -1003,154 +722,137 @@ TABLES
 .table > thead > tr.danger > th,
 .table > tbody > tr.danger > th,
 .table > tfoot > tr.danger > th {
-  background-color: @danger;
-  color: @inverse-text;
+  background-color: #ff0000;
+  color: #ffffff;
 }
-
 .table-hover > tbody > tr > td.danger:hover,
 .table-hover > tbody > tr > th.danger:hover,
 .table-hover > tbody > tr.danger:hover > td,
 .table-hover > tbody > tr:hover > .danger,
 .table-hover > tbody > tr.danger:hover > th {
-  background-color: @danger-hover;
-  color: @inverse-text;
+  background-color: #cc0000;
+  color: #ffffff;
 }
-
 /**************************
 ***************************
 PANELS
 ***************************
 **************************/
-
 .panel-default > .panel-heading {
-  color: @main-text;
-  background-color: @bg-color;
-  border-color: @panel-border-color;
-  font-family: @header-font;
+  color: #0066a2;
+  background-color: #f6f5f5;
+  border-color: #dddddd;
+  font-family: Stag;
 }
-
 .panel-primary {
-  border-color: @primary;
+  border-color: #0066a2;
 }
-
 .panel-primary > .panel-heading {
-  color: @inverse-text;
-  background-color: @primary;
-  border-color: @primary;
-  font-family: @header-font;
+  color: #ffffff;
+  background-color: #0066a2;
+  border-color: #0066a2;
+  font-family: Stag;
 }
-
 .panel-primary > .panel-heading + .panel-collapse > .panel-body {
-  border-top-color: @primary;
+  border-top-color: #0066a2;
 }
-
 .panel-primary > .panel-heading .badge {
-  color: @main-text;
-  background-color: @inverse-text;
+  color: #0066a2;
+  background-color: #ffffff;
 }
-
 .panel-primary > .panel-footer + .panel-collapse > .panel-body {
-  border-bottom-color: @primary;
+  border-bottom-color: #0066a2;
 }
-
 .panel-danger {
-  border-color: @danger;
+  border-color: #ff0000;
 }
-
 .panel-danger > .panel-heading {
-  color: @inverse-text;
-  background-color: @danger;
-  border-color: @danger;
-  font-family: @header-font;
+  color: #ffffff;
+  background-color: #ff0000;
+  border-color: #ff0000;
+  font-family: Stag;
 }
 .panel-danger > .panel-heading + .panel-collapse > .panel-body {
-  border-top-color: @danger;
+  border-top-color: #ff0000;
 }
 .panel-danger > .panel-heading .badge {
-  color: @danger;
-  background-color: @inverse-text;
+  color: #ff0000;
+  background-color: #ffffff;
 }
 .panel-danger > .panel-footer + .panel-collapse > .panel-body {
-  border-bottom-color: @danger;
+  border-bottom-color: #ff0000;
 }
-
 .panel-warning {
-  border-color: @warning;
+  border-color: #ff683b;
 }
 .panel-warning > .panel-heading {
-  color: @inverse-text;
-  background-color: @warning;
-  border-color: @warning;
-  font-family: @header-font;
+  color: #ffffff;
+  background-color: #ff683b;
+  border-color: #ff683b;
+  font-family: Stag;
 }
 .panel-warning > .panel-heading + .panel-collapse > .panel-body {
-  border-top-color: @warning;
+  border-top-color: #ff683b;
 }
 .panel-warning > .panel-heading .badge {
-  color: @warning;
-  background-color: @inverse-text;
+  color: #ff683b;
+  background-color: #ffffff;
 }
 .panel-warning > .panel-footer + .panel-collapse > .panel-body {
-  border-bottom-color: @warning;
+  border-bottom-color: #ff683b;
 }
-
 .panel-info {
-  border-color: @info;
+  border-color: #7a42b3;
 }
 .panel-info > .panel-heading {
-  color: @inverse-text;
-  background-color: @info;
-  border-color: @info;
-  font-family: @header-font;
+  color: #ffffff;
+  background-color: #7a42b3;
+  border-color: #7a42b3;
+  font-family: Stag;
 }
 .panel-info > .panel-heading + .panel-collapse > .panel-body {
-  border-top-color: @info;
+  border-top-color: #7a42b3;
 }
 .panel-info > .panel-heading .badge {
-  color: @info;
-  background-color: @inverse-text;
+  color: #7a42b3;
+  background-color: #ffffff;
 }
 .panel-info > .panel-footer + .panel-collapse > .panel-body {
-  border-bottom-color: @info;
+  border-bottom-color: #7a42b3;
 }
-
 /*********************
 **********************
 FORMS
 **********************
 *********************/
-
 .form-control {
   display: block;
-  width: @form-control-width;
-  height: @form-control-height;
+  width: 100%;
+  height: 43px;
   padding: 10px 18px;
   font-size: 15px;
   line-height: 1.42857143;
-  color: @main-text;
-  background-color: @form-bg;
-  background-image: @form-bg-image;
-  border: @form-border;
-  border-radius: @form-border-radius;
-  -webkit-box-shadow: @form-box-shadow;
-  box-shadow: @form-box-shadow;
-  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
-  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  color: #0066a2;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  border-radius: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
-
 .has-warning .input-group-addon {
-  color: @inverse-text;
-  border-color: @inverse-text;
-  background-color: @warning;
+  color: #ffffff;
+  border-color: #ffffff;
+  background-color: #ff683b;
 }
-
 .has-error .input-group-addon {
-  color: @inverse-text;
-  border-color: @inverse-text;
-  background-color: @danger;
+  color: #ffffff;
+  border-color: #ffffff;
+  background-color: #ff0000;
 }
-
 .has-warning .help-block,
 .has-warning .control-label,
 .has-warning .radio,
@@ -1162,12 +864,12 @@ FORMS
 .has-warning.radio-inline label,
 .has-warning.checkbox-inline label,
 .has-warning .form-control-feedback {
-  color: @warning;
+  color: #ff683b;
 }
 .has-warning .form-control,
 .has-warning .form-control:focus,
 .has-warning .input-group-addon {
-  border: @form-warning-border;
+  border: 1px solid #ff683b;
 }
 .has-error .help-block,
 .has-error .control-label,
@@ -1180,84 +882,72 @@ FORMS
 .has-error.radio-inline label,
 .has-error.checkbox-inline label,
 .has-error .form-control-feedback {
-  color: @danger;
+  color: #ff0000;
 }
 .has-error .form-control,
 .has-error .form-control:focus,
 .has-error .input-group-addon {
-  border: @form-error-border;
+  border: 1px solid #ff0000;
 }
-
 .well {
-  min-height: @well-min-height;
+  min-height: 20px;
   padding: 19px;
-  margin-bottom: @well-margin-bottom;
-  background-color: @well-bg;
-  border: @well-border;
-  border-radius: @well-border-radius;
-  -webkit-box-shadow: @well-box-shadow;
-  box-shadow: @well-box-shadow;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border: 1px solid #e3e3e3;
+  border-radius: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
-  /*******************
+/*******************
   ********************
   LISTS
   ********************
   *******************/
-
 a.list-group-item-warning.active {
-  background-color: @warning;
+  background-color: #ff683b;
 }
-
 a.list-group-item-warning.active:hover,
 a.list-group-item-warning.active:focus {
-  background-color: @warning-hover;
+  background-color: #e65e35;
 }
-
 a.list-group-item-danger.active {
-  background-color: @danger;
+  background-color: #ff0000;
 }
-
 a.list-group-item-danger.active:hover,
 a.list-group-item-danger.active:focus {
-  background-color: @danger-hover;
+  background-color: #cc0000;
 }
-
 .list-group-item.active > .badge,
 .nav-pills > .active > a > .badge {
-  color: @primary;
-  background-color: @inverse-text;
+  color: #0066a2;
+  background-color: #ffffff;
 }
-
 .list-group-item.active,
 .list-group-item.active:hover,
 .list-group-item.active:focus {
   z-index: 2;
-  color: @inverse-text;
-  background-color: @primary;
-  border-color: @list-border;
+  color: #ffffff;
+  background-color: #0066a2;
+  border-color: #dddddd;
 }
-
 /**********************
 footer
 ***********************/
-
 .footer {
-	display: block;
-	height: @footer-height;
-	width: @footer-width;
-	background-color: @footer-bg;
-	border-top: @footer-border-top;
-	box-shadow: @footer-box-shadow;
-	-webkit-box-shadow: @footer-box-shadow;
-	-moz-box-shadow: @footer-box-shadow;
-	position: fixed;
-	bottom: @footer-bottom;
-	left: @footer-left;
-	text-align: @footer-text-align;
-	z-index: 2000;
+  display: block;
+  height: 75px;
+  width: 100%;
+  background-color: #ffffff;
+  border-top: 6px solid #0066a2;
+  box-shadow: 0px 0px 10px 2px #000000;
+  -webkit-box-shadow: 0px 0px 10px 2px #000000;
+  -moz-box-shadow: 0px 0px 10px 2px #000000;
+  position: fixed;
+  bottom: 0px;
+  text-align: center;
 }
-
 .footer-text {
-  margin: @footer-text-margin;
-  margin-top: @footer-text-margin-top;
+  margin: auto;
+  margin-top: 40px;
 }
