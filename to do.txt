@@ -2,6 +2,7 @@ custom css added -- needs review
 Add rebranding guidelines
 Default dropdown menu background
 add success buttons
+pager background from blue to white.
 
 finish .dropdown-menu {}
 
