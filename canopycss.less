@@ -20,6 +20,7 @@ PAGE BACKGROUND COLOR
 *********************/
 
 @bg-color: #f6f5f5;
+@body-padding: 0px 100px 0px 100px;
 
 /*********************
 MAIN FONT COLOR
@@ -82,14 +83,15 @@ FOOTER
 *******************/
 
 @footer-bg: #FFFFFF;
-@footer-height: 75px;
+@footer-height: 60px;
 @footer-width: 100%;
 @footer-border-top: 6px solid #0066a2;
 @footer-box-shadow: 0px 0px 10px 2px #000000;
 @footer-bottom: 0px;
+@footer-left: 0px;
 @footer-text-align: center;
 @footer-text-margin: auto;
-@footer-text-margin-top: 40px;
+@footer-text-margin-top: 20px;
 
 /*****************
 CURSOR DISPLAYED ON A DISABLED LINK/BUTTON
@@ -242,6 +244,7 @@ body {
 	background-color: @bg-color;
 	color: @main-text;
   	font-family: @main-font;
+  	padding: @body-padding;
 }
 
 legend {
@@ -1248,6 +1251,7 @@ footer
 	-moz-box-shadow: @footer-box-shadow;
 	position: fixed;
 	bottom: @footer-bottom;
+	left: @footer-left;
 	text-align: @footer-text-align;
 	z-index: 2000;
 }
