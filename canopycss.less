@@ -113,6 +113,11 @@ DROPDOWN MENU
 
 @dropdown-bg: #0066a2;
 @dropdown-text: @main-text;  /******** PUT IN DROPDOWN-TEXT *********/
+@dropdown-font-size: 15px;
+@dropdown-border-hex: 1px solid #cccccc;
+@dropdown-border-rgba: 1px solid rgba(0, 0, 0, 0.15);
+@dropdown-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+@dropdown-border-radius: 0;
 
 /******************
 DISABLED DROPDOWN MENU
@@ -134,9 +139,10 @@ BUTTON/COLORED AREA BACKGROUNDS
 @disabled: #000000;
 
 /*********************
-BUTTON TEXT DECORATION
+BUTTON
 **********************/
 
+@btn-border: 1px solid transparent
 @btn-hover-text-decoration: none;
 @btn-text: @inverse-text;
 
@@ -235,6 +241,12 @@ PAGER
 @pager-disabled-bg: @disabled-dropdown-bg;
 @pager-disabled-cursor: @disabled-cursor;
 
+/**********************
+BADGE
+**********************/
+
+@badge-border-radius: 10px;
+
 /************************************************************************************
 *************************************************************************************
 UNLESS ADDING FULLY CUSTOM CSS, THERE SHOULD BE NO NEED TO EDIT ANYTHING BELOW HERE
@@ -312,7 +324,7 @@ MISC
   white-space: nowrap;
   text-align: center;
   background-color: @primary;
-  border-radius: 10px;
+  border-radius:@badge-border-radius;
 }
 
 /*******************
@@ -459,7 +471,7 @@ fieldset[disabled] .btn-default.active {
       touch-action: manipulation;
   cursor: pointer;
   background-image: none;
-  border: 1px solid transparent;
+  border: @btn-border;
   white-space: nowrap;
   padding: 10px 18px;
   font-size: 15px;
@@ -504,7 +516,6 @@ fieldset[disabled] .btn-default.active {
 	margin-left: 0px;
 }
 
-}
 .btn-success {
   color: @inverse-text;
   background-color: @success;
@@ -664,14 +675,14 @@ NAVBAR
   padding: 5px 0;
   margin: 2px 0 0;
   list-style: none;
-  font-size: 15px;
+  font-size: @dropdown-font-size;
   text-align: left;
   background-color: @dropdown-bg;
-  border: 1px solid #cccccc;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 0;
-  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  border: @dropdown-border-hex;
+  border: @dropdown-border-rgba;
+  border-radius: @dropdown-border-radius;
+  -webkit-box-shadow: @dropdown-box-shadow;
+  box-shadow: @dropdown-box-shadow;
   -webkit-background-clip: padding-box;
           background-clip: padding-box;
 }
@@ -925,7 +936,7 @@ PAGINATION
   float: left;
   padding: 10px 18px;
   line-height: 1.42857143;
-  text-decoration: none;
+  text-decoration: @link-decoration;
   color: @main-text;
   background-color: @pagination-bg;
   border: @pagination-border;
