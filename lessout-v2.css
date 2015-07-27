@@ -317,6 +317,51 @@ fieldset[disabled] .btn-default.active {
 .navbar > .container-fluid .navbar-brand {
   margin-left: 0px;
 }
+.btn-success {
+  color: #ffffff;
+  background-color: #3fb618;
+  border-color: #3fb618;
+}
+.btn-success:focus,
+.btn-success.focus {
+  color: #ffffff;
+  background-color: #3fb618;
+  border-color: #3fb618;
+}
+.btn-success:hover {
+  color: #ffffff;
+  background-color: #2f8912;
+  border-color: #2f8912;
+}
+.btn-success:active,
+.btn-success.active,
+.open > .dropdown-toggle.btn-success {
+  color: #ffffff;
+  background-color: #2f8912;
+  border-color: #2f8912;
+}
+.btn-success:active:hover,
+.btn-success.active:hover,
+.open > .dropdown-toggle.btn-success:hover,
+.btn-success:active:focus,
+.btn-success.active:focus,
+.open > .dropdown-toggle.btn-success:focus,
+.btn-success:active.focus,
+.btn-success.active.focus,
+.open > .dropdown-toggle.btn-success.focus {
+  color: #ffffff;
+  background-color: #2f8912;
+  border-color: #2f8912;
+}
+.btn-success:active,
+.btn-success.active,
+.open > .dropdown-toggle.btn-success {
+  background-image: none;
+}
+.btn-success .badge {
+  color: #3fb618;
+  background-color: #ffffff;
+}
 /************
 menu triangles
 ***********/
@@ -573,6 +618,13 @@ LABELS
 .label-danger {
   background-color: #ff0000;
 }
+.label-success {
+  background-color: #3fb618;
+}
+.label-success[href]:hover,
+.label-success[href]:focus {
+  background-color: #2f8912;
+}
 /*********************
 **********************
 PILLS AND BADGES
@@ -668,7 +720,7 @@ Pager
 .pager li > span {
   display: inline-block;
   padding: 5px 14px;
-  background-color: #0066a2;
+  background-color: #ffffff;
   color: #0066a2;
   border: 1px solid #dddddd;
   border-radius: 0;
