@@ -425,7 +425,8 @@ NAVBAR
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border-color: none;
+  border-color: transparent;
+  padding-top: 5px;
 }
 .navbar-default .navbar-text {
   color: #0066a2;
@@ -438,6 +439,12 @@ NAVBAR
 .navbar-default .navbar-nav > li > a:focus {
   color: #0066a2;
   background-color: #ffffff;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  background-color: transparent;
+  color: #0066a2;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,

@@ -64,6 +64,9 @@ HEADER / NAVBAR
 @navbar-border-left-width: 0px;
 @navbar-border-right-width: 0px;
 @navbar-border-top-width: 0px;
+@navbar-link-padding: 5px;
+@navbar-open-bg: transparent;
+@navbar-open-text: @primary;
 
 
 /************************
@@ -650,7 +653,8 @@ NAVBAR
 
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border-color: none;
+  border-color: transparent;
+  padding-top: @navbar-link-padding;
 }
 
 .navbar-default .navbar-text {
@@ -665,6 +669,14 @@ NAVBAR
   color: @navbar-text;
   background-color: @navbar-bg;
 }
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  background-color: @navbar-open-bg;
+  color: @navbar-open-text;
+}
+
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
