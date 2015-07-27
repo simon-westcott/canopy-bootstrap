@@ -36,7 +36,7 @@ THIS IS THE ONE WE'VE USED TO DISPLAY ON BUTTONS/COLORED OBJECTS
 *****************************************************************/
 
 @inverse-text: #FFFFFF;
-v
+
 /*******************
 HEADING / TITLE FONT
 IF IT'S A CUSTOM FONT THE @font-face FILE LINKS AT THE TOP OF THIS FILE SHOULD ALSO BE EDITED
@@ -286,6 +286,7 @@ body {
 	color: @main-text;
   	font-family: @main-font;
   	padding: @body-padding;
+  	display: block;
 }
 
 legend {
@@ -631,6 +632,7 @@ NAVBAR
 	left: 0px;
 	position: fixed;
 	z-index: 4;
+	margin-bottom: @navbar-height + 20px;
 }
 
 .navbar-brand {
@@ -1354,7 +1356,7 @@ footer
 	left: @footer-left;
 	text-align: @footer-text-align;
 	z-index: 2000;
-	margin-top: 0px;
+	margin-top: @footer-height + 50px;
 }
 
 .footer-text {
@@ -1366,5 +1368,12 @@ footer
 	top: @navbar-height;
 	margin-top: 20px;
 	height: 100%;
-	margin-bottom: 0px;
+}
+
+.navbar-space {
+	height: @navbar-height;
+}
+
+.footer-space {
+	height: @footer-height + 20px;
 }
