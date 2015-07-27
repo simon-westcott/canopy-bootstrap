@@ -1,5 +1,40 @@
 To rebrand this template for a customer you will need to edit the canopycss.less file.
 
-The sections for rebranding are commented in the .less file.
+The sections for rebranding are commented in the .less file, there should be no need to edit anything but the '@' classes at the beginning.
 
-There are 2 custom classes: .footer and .footer-text that are not from bootstrap.
+'@' classes can be nested, as shown in the original Canopycss.less file. Any nested '@' can be changed for direct css.
+An example from the original file:
+
+	Here our table text will render as the same colour as the main text: #0066a2 (blue)
+
+	@main-text: #0066a2;
+	@table-text: @main-text;
+
+	However, I may want our table text to be a shade of red:
+
+	@table-text: #CC0000;
+
+	This has now removed the connection between table text and the main text.
+
+
+Nesting classes can make changing a color much quicker.
+
+	The example below shows several classes all with the same values:
+
+	@inverse-text: #FFFFFF;
+	@navbar-bg: #FFFFFF;
+	@navbar-border: #ffffff #ffffff #0066a2 #ffffff;
+	@footer-bg: #FFFFFF;
+
+	Further edits can be made easier my nesting these classes to make this:
+
+	@inverse-text: #FFFFFF;
+	@navbar-bg: @inverse-text;
+	@navbar-border: @inverse-text @inverse-text #0066a2 @inverse-text;
+	@footer-bg: @inverse-text;
+
+	This renders the navbar background, 3 sides of its border and the footer background the same color as the inverse text.
+	If i change the color of the inverse text, all those will also change.
+
+
+There are 2 custom classes: .footer and .footer-text that are not from bootstrap, these are still customizable the same as the bootstrapped css.
