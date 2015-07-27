@@ -415,7 +415,7 @@ NAVBAR
 }
 .navbar-brand {
   float: left;
-  background: url("http://canopy-cloud.com/sites/all/themes/canopytheme/images/logo.png") no-repeat;
+  background: url("brand.png") no-repeat;
   color: transparent;
   width: 178px;
   margin: 15px 0px 0px 20px;
