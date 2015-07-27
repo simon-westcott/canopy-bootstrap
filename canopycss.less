@@ -62,10 +62,16 @@ HEADER / NAVBAR
 @navbar-brand-logo: url("http://canopy-cloud.com/sites/all/themes/canopytheme/images/logo.png") no-repeat;
 @navbar-text: #0066a2;
 @navbar-border: #ffffff #ffffff #0066a2 #ffffff;
-@menu-triangle-color: transparent transparent #0066a2 transparent;
 @navbar-brand-width: 178px;
 @navbar-brand-height: 52px;
 @navbar-brand-margins: 10px 0px 0px 10px;
+
+/***********************
+MENU DROPDOWN TRIANGLE
+************************/
+
+@menu-triangle-color: transparent transparent #0066a2 transparent;
+@menu-triangle-size: 10px solid;
 
 /**********************
 NAV TABS
@@ -582,7 +588,7 @@ menu triangles
 	height: 0;
 	bottom: 100%;
 	left: 40%;
-	border: 10px solid;
+	border: @menu-triangle-size: 10px solid;
 	border-color: @menu-triangle-color;
 }
 
