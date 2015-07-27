@@ -162,6 +162,7 @@ BUTTON
 @btn-hover-text-decoration: none;
 @btn-text: @inverse-text;
 @btn-font-size: 15px;
+@btn-cursor: pointer;
 
 /*************************
 DISABLED AREA TEXT COLOR
@@ -265,6 +266,14 @@ BADGE
 **********************/
 
 @badge-border-radius: 10px;
+@badge-font-size: 13px;
+
+/**************************
+HELP BLOCK
+***************************/
+
+@help-block-margin-top: 5px;
+@help-block-margin-bottom: 10px;
 
 /************************************************************************************
 *************************************************************************************
@@ -336,7 +345,7 @@ MISC
   display: inline-block;
   min-width: 10px;
   padding: 3px 7px;
-  font-size: 13px;
+  font-size: @badge-font-size;
   font-weight: bold;
   color: @btn-text;
   line-height: 1;
@@ -489,7 +498,7 @@ fieldset[disabled] .btn-default.active {
   vertical-align: middle;
   -ms-touch-action: manipulation;
       touch-action: manipulation;
-  cursor: pointer;
+  cursor: @btn-cursor;
   background-image: none;
   border: @btn-border;
   white-space: nowrap;
@@ -816,8 +825,8 @@ button.list-group-item-info:focus {
 
 .help-block {
   display: block;
-  margin-top: 5px;
-  margin-bottom: 10px;
+  margin-top: @help-block-margin-top;
+  margin-bottom: @help-block-margin-bottom;
   color: @main-text;
 }
 
