@@ -1,6 +1,7 @@
-custom css added -- needs review
-Add rebranding guidelines
-Default dropdown menu background
+continuously review rebranding guidelines
+Default dropdown menu background -- check
+text-decoration - pagination
+legend - font
 
 finish .dropdown-menu {}
 
