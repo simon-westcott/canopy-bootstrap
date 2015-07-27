@@ -1,9 +1,7 @@
 continuously review rebranding guidelines
 Default dropdown menu background -- check
 Make body scroll up past footer.
-header border at an angle ?
 body overflow - scroll
-navbar brand logo padding
 
 remove local initial css link from example html
 
