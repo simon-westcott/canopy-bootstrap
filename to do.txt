@@ -1,7 +1,5 @@
 continuously review rebranding guidelines
 Default dropdown menu background -- check
-text-decoration - pagination
-legend - font
 
 finish .dropdown-menu {}
 

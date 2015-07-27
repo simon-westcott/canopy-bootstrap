@@ -127,7 +127,14 @@ DISABLED DROPDOWN MENU
 @disabled-dropdown-text: @disabled-text; /********** PUT IN @DISABLED-DROPDOWN-TEXT **********/
 
 /*******************
-BUTTON/COLORED AREA BACKGROUNDS
+LEGEND
+********************/
+
+@legend-font-size: 22.5px;
+@legend-border: 1px solid #e5e5e5;
+
+/*******************
+COLORED AREA BACKGROUNDS
 ********************/
 
 @info: #7a42b3;
@@ -266,11 +273,12 @@ legend {
   width: 100%;
   padding: 0;
   margin-bottom: 21px;
-  font-size: 22.5px;
+  font-size: @legend-font-size;
   line-height: inherit;
   color: @main-text;
   border: 0;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: @legend-border;
+  font-family: @main-font;
 }
 
 a {
