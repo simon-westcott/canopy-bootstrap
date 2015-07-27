@@ -2,6 +2,7 @@ continuously review rebranding guidelines
 Default dropdown menu background -- check
 Make body scroll up past footer.
 header border at an angle ?
+body overflow - scroll
 
 remove local initial css link from example html
 
@@ -33,3 +34,40 @@ content: ' ';
   left: 40%;
   border: 10px solid;
   border-color: transparent transparent #0066a2 transparent;
+
+
+
+  .footer {
+	display: block;
+	height: @footer-height;
+	width: @footer-width;
+	background-color: @footer-bg;
+	border-top: @footer-border-top;
+	box-shadow: @footer-box-shadow;
+	-webkit-box-shadow: @footer-box-shadow;
+	-moz-box-shadow: @footer-box-shadow;
+	position: fixed;
+	bottom: @footer-bottom;
+	left: @footer-left;
+	text-align: @footer-text-align;
+	z-index: 2000;
+}
+
+
+.navbar-default {
+    display:block;
+	background-color: @navbar-bg;
+	color: @main-text;
+	border-style: @navbar-border-style;
+    border-bottom-width: @navbar-bottom-border-width;
+	border-color: @navbar-border;
+	box-shadow: @navbar-box-shadow;
+	-webkit-box-shadow: @navbar-box-shadow;
+	-moz-box-shadow: @navbar-box-shadow;
+	height: @navbar-height;
+	right: 0px;
+	top: 0px;
+	left: 0px;
+	position: fixed;
+	z-index: 4;
+}
