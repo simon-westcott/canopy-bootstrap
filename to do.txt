@@ -1,12 +1,10 @@
 continuously review rebranding guidelines
 Default dropdown menu background -- check
+Make body scroll up past footer.
 
 remove local initial css link from example html
 
-finish .dropdown-menu {}
-
 HTML boilerplate methods
-
 
 all primary colors to #0066a2
 all defaults to transparent -- default text to #0066a2
@@ -19,7 +17,7 @@ danger:hover to #CC0000
 info:hover to #583081
 default:hover to #0066a2 -- text to white
 
-triangle;
+navbar border triangle;
 
 #nav ul {
   margin-top: 15px;

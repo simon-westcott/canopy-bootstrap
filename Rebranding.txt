@@ -14,7 +14,7 @@ An example from the original file:
 
 	@table-text: #CC0000;
 
-	This has now removed the connection between table text and the main text; making our table text red whilst keeping main text blue.
+	This has now removed the connection between table text and the main text; making our table text red whilst keeping the main text blue.
 
 
 Nesting classes can make changing a color much quicker.
