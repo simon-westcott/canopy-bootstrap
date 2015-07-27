@@ -3,7 +3,10 @@ Default dropdown menu background -- check
 Make body scroll up past footer.
 
 login-page css
--- form-signin-heading
+-- form-signin-heading -- take from vanilla
+-- form-control
+-- body color
+-- btn-lg font -- add new class for login button ?
 
 remove local initial css link from example html
 
