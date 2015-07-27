@@ -37,4 +37,4 @@ Nesting classes can make changing a color much quicker.
 	If i change the color of the inverse text, all those will also change.
 
 
-There are 2 custom classes: .footer and .footer-text that are not from bootstrap, these are still customizable the same as the bootstrapped css.
+There are 2 custom classes: .footer and .footer-text that are not from bootstrap; these are still customizable, the same as the bootstrapped css.
