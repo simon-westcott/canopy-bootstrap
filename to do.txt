@@ -1,7 +1,6 @@
 continuously review rebranding guidelines
-Default dropdown menu background -- check
-Make body scroll up past footer.
-body overflow - scroll
+
+rename css file for ease
 
 remove local initial css link from example html
 
