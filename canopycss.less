@@ -142,7 +142,7 @@ BUTTON/COLORED AREA BACKGROUNDS
 BUTTON
 **********************/
 
-@btn-border: 1px solid transparent
+@btn-border: 1px solid transparent;
 @btn-hover-text-decoration: none;
 @btn-text: @inverse-text;
 
@@ -226,6 +226,7 @@ PAGE SELECTOR COLORS
 @pagination-hover-border-color: #dddddd;
 @pagination-hover-bg: @primary;
 @pagination-border: 1px solid #dddddd;
+@pagination-link-decoration: none;
 
 /**********************
 PAGER
@@ -936,7 +937,7 @@ PAGINATION
   float: left;
   padding: 10px 18px;
   line-height: 1.42857143;
-  text-decoration: @link-decoration;
+  text-decoration: @pagination-link-decoration;
   color: @main-text;
   background-color: @pagination-bg;
   border: @pagination-border;
