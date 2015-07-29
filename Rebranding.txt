@@ -58,3 +58,4 @@ These include:
 	main.html - a minimal header/footer template
 	contact.html - a simple template for a company contact information
 	contact-test.html - main+contact
+	header.html - header template only
