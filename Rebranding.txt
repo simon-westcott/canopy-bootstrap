@@ -55,4 +55,6 @@ There are 2 custom classes: .footer and .footer-text that are not from bootstrap
 
 Key pages have been templated ready for content.
 These include:
-	main.html - a minimal template
+	main.html - a minimal header/footer template
+	contact.html - a simple template for a company contact information
+	contact-test.html - main+contact
