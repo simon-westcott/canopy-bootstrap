@@ -4,13 +4,18 @@ The sections for rebranding are commented in the .less file, there should be no 
 
 Once any edits have been completed, compile the less file into css. This allows your website to load quicker and makes it more secure.
 WINDOWS: 
-	Download winless from winless.org.
+	Download winless from winless.org
 	Click 'Add folder', your less file should be shown on the right hand side.
 	Ensure that your less file is checked.
 	The 'Minify' checkbox is optional.
 	Click 'Compile', this may take a couple of minutes.
 	The output css file, by default, will be called the same as the input less file and will be in the same folder.
 
+MAC:
+	Download Simpless from wearekiss.com/simpless
+	Drag and drop the containing folder into the program window
+	Click the compile button that is to the right of the file name, this may taker a couple of minutes.
+	The output css file, by default, will be called the same as the input less file and will be in the same folder.
 
 '@' classes can be nested, as shown in the original Canopycss.less file. Any nested '@' can be changed for direct css.
 An example from the original file:
