@@ -1,5 +1,7 @@
 This project is to create a branded bootstrap theme for Canopy products, with the requirement to be easily customizable for a customer.
 
+'example html.html' shows an overview of the complete Canopy template
+
 The lessout-v2.css file changes twitter bootstrap to match the Canopy theme and should be used in addition to the normal twitter bootstrap files.
 
 example html.html shows the customized elements in this template including the header, footer, buttons and tables.
