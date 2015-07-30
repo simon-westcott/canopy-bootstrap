@@ -53,9 +53,10 @@ Nesting classes can make changing a color much quicker.
 
 There are 2 custom classes: .footer and .footer-text that are not from bootstrap; these are still customizable, the same as the bootstrapped css.
 
-Key pages have been templated ready for content.
+Key sections have been templated ready for content.
 These include:
 	main.html - a minimal header/footer template
 	contact.html - a simple template for a company contact information
 	contact-test.html - main+contact
 	header.html - header template only
+	footer.html - footer template only
