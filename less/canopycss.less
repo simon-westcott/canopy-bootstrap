@@ -524,6 +524,28 @@ fieldset[disabled] .btn-default.active {
   border-color: @info-hover;
 }
 
+.btn-info.disabled,
+.btn-info[disabled],
+fieldset[disabled] .btn-info,
+.btn-info.disabled:hover,
+.btn-info[disabled]:hover,
+fieldset[disabled] .btn-info:hover,
+.btn-info.disabled:focus,
+.btn-info[disabled]:focus,
+fieldset[disabled] .btn-info:focus,
+.btn-info.disabled.focus,
+.btn-info[disabled].focus,
+fieldset[disabled] .btn-info.focus,
+.btn-info.disabled:active,
+.btn-info[disabled]:active,
+fieldset[disabled] .btn-info:active,
+.btn-info.disabled.active,
+.btn-info[disabled].active,
+fieldset[disabled] .btn-info.active {
+  background-color: @info;
+  border-color: @info;
+}
+
 .btn {
   display: inline-block;
   margin-bottom: 0;
@@ -762,6 +784,10 @@ NAVBAR
 	background-color: @primary-hover;
 }
 
+/*************************
+DROPDOWN MENU
+*************************/
+
 .dropdown-menu {
   position: absolute;
   top: 100%;
@@ -783,6 +809,31 @@ NAVBAR
   box-shadow: @dropdown-box-shadow;
   -webkit-background-clip: padding-box;
           background-clip: padding-box;
+}
+
+.dropdown-menu > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.42857143;
+  color: @inverse-text;
+  background-color: @primary;
+  white-space: nowrap;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  text-decoration: none;
+  color: @inverse-text;
+  background-color: @primary-hover;
+}
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  color: @inverse-text;
+  text-decoration: none;
+  outline: 0;
+  background-color: @primary-hover;
 }
 
 /*****************
@@ -1494,6 +1545,10 @@ footer
   margin: @footer-text-margin;
   margin-top: @footer-text-margin-top;
 }
+
+/***********************
+MISC
+***********************/
 
 .login-page {
 	top: @navbar-height;

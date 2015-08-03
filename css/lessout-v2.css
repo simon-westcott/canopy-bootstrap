@@ -305,6 +305,27 @@ fieldset[disabled] .btn-default.active {
   background-color: #583081;
   border-color: #583081;
 }
+.btn-info.disabled,
+.btn-info[disabled],
+fieldset[disabled] .btn-info,
+.btn-info.disabled:hover,
+.btn-info[disabled]:hover,
+fieldset[disabled] .btn-info:hover,
+.btn-info.disabled:focus,
+.btn-info[disabled]:focus,
+fieldset[disabled] .btn-info:focus,
+.btn-info.disabled.focus,
+.btn-info[disabled].focus,
+fieldset[disabled] .btn-info.focus,
+.btn-info.disabled:active,
+.btn-info[disabled]:active,
+fieldset[disabled] .btn-info:active,
+.btn-info.disabled.active,
+.btn-info[disabled].active,
+fieldset[disabled] .btn-info.active {
+  background-color: #7a42b3;
+  border-color: #7a42b3;
+}
 .btn {
   display: inline-block;
   margin-bottom: 0;
@@ -521,6 +542,9 @@ NAVBAR
   color: #ffffff;
   background-color: #004a75;
 }
+/*************************
+DROPDOWN MENU
+*************************/
 .dropdown-menu {
   position: absolute;
   top: 100%;
@@ -542,6 +566,30 @@ NAVBAR
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+}
+.dropdown-menu > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.42857143;
+  color: #ffffff;
+  background-color: #0066a2;
+  white-space: nowrap;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #004a75;
+}
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  color: #ffffff;
+  text-decoration: none;
+  outline: 0;
+  background-color: #004a75;
 }
 /*****************
 ******************
@@ -1170,6 +1218,9 @@ footer
   margin: auto;
   margin-top: 20px;
 }
+/***********************
+MISC
+***********************/
 .login-page {
   top: 92px;
   margin-top: 20px;

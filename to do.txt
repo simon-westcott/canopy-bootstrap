@@ -1,6 +1,5 @@
 continuously review rebranding guidelines
 info dropdown active
-input sizes
 
 navbar border triangle;
 
