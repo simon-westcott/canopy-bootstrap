@@ -4,8 +4,6 @@ info dropdown active
 defualt/info/success/warning dropdown backgrounds and text colors
 info border color
 ensure the box shapes are forced to be square
-delete less copy
-delete lessout.css
 
 
 
