@@ -186,6 +186,10 @@ TEXT
 .text-info:hover {
   color: #7a42b3;
 }
+.text-success,
+.text-success:hover {
+  color: #3fb618;
+}
 /*********************
 **********************
 BUTTONS
