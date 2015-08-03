@@ -596,6 +596,10 @@ DROPDOWN MENU
 PROGRESS BAR
 ******************
 *****************/
+.progress .progress-bar {
+  font-size: 8px;
+  line-height: 8px;
+}
 .progress-bar {
   float: left;
   width: 0%;
@@ -1043,6 +1047,24 @@ PANELS
 }
 .panel-info > .panel-footer + .panel-collapse > .panel-body {
   border-bottom-color: #7a42b3;
+}
+.panel-success {
+  border-color: #3fb618;
+}
+.panel-success > .panel-heading {
+  color: #ffffff;
+  background-color: #3fb618;
+  border-color: #3fb618;
+}
+.panel-success > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #3fb618;
+}
+.panel-success > .panel-heading .badge {
+  color: #3fb618;
+  background-color: #ffffff;
+}
+.panel-success > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #3fb618;
 }
 /*********************
 **********************

@@ -1,5 +1,7 @@
 continuously review rebranding guidelines
 info dropdown active
+well sizes
+alert link colors
 
 navbar border triangle;
 

@@ -842,6 +842,12 @@ PROGRESS BAR
 ******************
 *****************/
 
+
+.progress .progress-bar {
+  font-size: 8px;
+  line-height: 8px;
+}
+
 .progress-bar {
   float: left;
   width: 0%;
@@ -1352,6 +1358,25 @@ PANELS
 }
 .panel-info > .panel-footer + .panel-collapse > .panel-body {
   border-bottom-color: @info;
+}
+
+.panel-success {
+  border-color: @success;
+}
+.panel-success > .panel-heading {
+  color: @inverse-text;
+  background-color: @success;
+  border-color: @success;
+}
+.panel-success > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: @success;
+}
+.panel-success > .panel-heading .badge {
+  color: @success;
+  background-color: @inverse-text;
+}
+.panel-success > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: @success;
 }
 
 /*********************
