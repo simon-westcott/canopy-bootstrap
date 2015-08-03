@@ -1,17 +1,8 @@
 continuously review rebranding guidelines
-class=success
 info dropdown active
 defualt/info/success/warning dropdown backgrounds and text colors
 info border color
-ensure the box shapes are forced to be square
 
-
-
-rename css file for ease
-
-remove local initial css link from example html
-
-HTML boilerplate methods
 
 navbar border triangle;
 
