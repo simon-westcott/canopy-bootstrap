@@ -1093,6 +1093,28 @@ FORMS
 .has-success .input-group-addon {
   border: 1px solid #3fb618;
 }
+.input-sm {
+  height: 31px;
+  padding: 5px 10px;
+  font-size: 13px;
+  line-height: 1.5;
+  border-radius: 0;
+}
+select.input-sm {
+  height: 31px;
+  line-height: 31px;
+}
+.input-lg {
+  height: 64px;
+  padding: 18px 30px;
+  font-size: 19px;
+  line-height: 1.3333333;
+  border-radius: 0;
+}
+select.input-lg {
+  height: 64px;
+  line-height: 64px;
+}
 /*******************
   ********************
   LISTS
