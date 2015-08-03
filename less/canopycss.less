@@ -1453,17 +1453,6 @@ FORMS
   border: @form-error-border;
 }
 
-.well {
-  min-height: @well-min-height;
-  padding: @well-padding;
-  margin-bottom: @well-margin-bottom;
-  background-color: @well-bg;
-  border: @well-border;
-  border-radius: @well-border-radius;
-  -webkit-box-shadow: @well-box-shadow;
-  box-shadow: @well-box-shadow;
-}
-
 .has-success .help-block,
 .has-success .control-label,
 .has-success .radio,
@@ -1506,11 +1495,39 @@ select.input-lg {
   height: 64px;
   line-height: 64px;
 }
-  /*******************
-  ********************
-  LISTS
-  ********************
-  *******************/
+
+
+/********************
+********************
+WELL
+*********************
+******************/
+
+.well {
+  min-height: @well-min-height;
+  padding: @well-padding;
+  margin-bottom: @well-margin-bottom;
+  background-color: @well-bg;
+  border: @well-border;
+  border-radius: @well-border-radius;
+  -webkit-box-shadow: @well-box-shadow;
+  box-shadow: @well-box-shadow;
+}
+
+.well-lg {
+  padding: 24px;
+  border-radius: 0;
+}
+.well-sm {
+  padding: 9px;
+  border-radius: 0;
+}
+
+/*******************
+********************
+LISTS
+********************
+*******************/
 
 a.list-group-item-warning.active {
   background-color: @warning;
