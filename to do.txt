@@ -1,7 +1,6 @@
 continuously review rebranding guidelines
 info dropdown active
-info border color
-button sizes
+input success
 
 navbar border triangle;
 
