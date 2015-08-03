@@ -1,8 +1,7 @@
 continuously review rebranding guidelines
 info dropdown active
-defualt/info/success/warning dropdown backgrounds and text colors
 info border color
-
+button sizes
 
 navbar border triangle;
 

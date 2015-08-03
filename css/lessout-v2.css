@@ -399,6 +399,27 @@ fieldset[disabled] .btn-default.active {
   color: #3fb618;
   background-color: #ffffff;
 }
+.btn-lg,
+.btn-group-lg > .btn {
+  padding: 18px 30px;
+  font-size: 19px;
+  line-height: 1.3333333;
+  border-radius: 0;
+}
+.btn-sm,
+.btn-group-sm > .btn {
+  padding: 5px 10px;
+  font-size: 13px;
+  line-height: 1.5;
+  border-radius: 0;
+}
+.btn-xs,
+.btn-group-xs > .btn {
+  padding: 1px 5px;
+  font-size: 13px;
+  line-height: 1.5;
+  border-radius: 0;
+}
 /************
 menu triangles
 ***********/
