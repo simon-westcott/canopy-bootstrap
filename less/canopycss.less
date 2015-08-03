@@ -166,6 +166,8 @@ BUTTON
 @btn-text: @inverse-text;
 @btn-font-size: 15px;
 @btn-cursor: pointer;
+@info-border: @info;
+@info-border-hover: @info-hover;
 
 /*************************
 DISABLED AREA TEXT COLOR
@@ -488,10 +490,33 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-info {
 	background-color: @info;
+  border-color: @info-border;
 }
 
 .btn-info:hover {
 	background-color: @info-hover;
+  border-color: @info-border-hover;
+}
+
+.btn-info:active,
+.btn-info.active,
+.open > .dropdown-toggle.btn-info {
+  color: @inverse-text;
+  background-color: @info;
+  border-color: @info;
+}
+.btn-info:active:hover,
+.btn-info.active:hover,
+.open > .dropdown-toggle.btn-info:hover,
+.btn-info:active:focus,
+.btn-info.active:focus,
+.open > .dropdown-toggle.btn-info:focus,
+.btn-info:active.focus,
+.btn-info.active.focus,
+.open > .dropdown-toggle.btn-info.focus {
+  color: @inverse-text;
+  background-color: @info-hover;
+  border-color: @info-hover;
 }
 
 .btn {

@@ -275,9 +275,31 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-info {
   background-color: #7a42b3;
+  border-color: #7a42b3;
 }
 .btn-info:hover {
   background-color: #583081;
+  border-color: #583081;
+}
+.btn-info:active,
+.btn-info.active,
+.open > .dropdown-toggle.btn-info {
+  color: #ffffff;
+  background-color: #7a42b3;
+  border-color: #7a42b3;
+}
+.btn-info:active:hover,
+.btn-info.active:hover,
+.open > .dropdown-toggle.btn-info:hover,
+.btn-info:active:focus,
+.btn-info.active:focus,
+.open > .dropdown-toggle.btn-info:focus,
+.btn-info:active.focus,
+.btn-info.active.focus,
+.open > .dropdown-toggle.btn-info.focus {
+  color: #ffffff;
+  background-color: #583081;
+  border-color: #583081;
 }
 .btn {
   display: inline-block;
