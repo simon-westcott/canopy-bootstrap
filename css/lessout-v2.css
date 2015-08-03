@@ -414,7 +414,7 @@ NAVBAR
 }
 .navbar-brand {
   float: left;
-  background: url("brand.png") no-repeat;
+  background: url("../images/brand.png") no-repeat;
   color: transparent;
   width: 178px;
   margin: 15px 0px 0px 20px;
