@@ -28,7 +28,8 @@ MAIN FONT
 
 
 @main-font: Verdana, Arial;
-@main-text: #0066a2;
+@main-text: #black;
+@link-color: #0066a2;
 
 /*****************************************************************
 SECONDARY FONT COLOR 
@@ -43,6 +44,7 @@ IF IT'S A CUSTOM FONT THE @font-face FILE LINKS AT THE TOP OF THIS FILE SHOULD A
 ********************/
 
 @header-font: Stag;
+@header-color: #0066a2; /** ADD TO PLACES **/
 
 /*********************
 HEADER / NAVBAR
@@ -308,7 +310,7 @@ legend {
 }
 
 a {
-  color: @main-text;
+  color: @link-color;
   text-decoration: none;
 }
 
@@ -443,13 +445,15 @@ BUTTONS
 
 .btn-default {
 	background-color: @default;
-	border-color: @default;
+	border-color: #cccccc;
+  border: 1px solid #cccccc !important;
 	color: @main-text;
 }
 
 .btn-default:hover{
 	background-color: @default;
-	border-color: @default;
+  border-color: #cccccc;
+  border: 1px solid #cccccc;
 	color: @main-text;
 }
 
@@ -603,7 +607,7 @@ fieldset[disabled] .btn-info.active {
 
 .btn-info.active,
 .btn-info:active,.open > .dropdown-toggle.btn-info {
-  color:@inverse-text;
+  color: @inverse-text;
   background-color: @info;
   border-color: @info;
 }
@@ -613,16 +617,16 @@ fieldset[disabled] .btn-info.active {
 .btn-info:active:focus,.btn-info:active:hover,
 .open > .dropdown-toggle.btn-info.focus,.open>.dropdown-toggle.btn-info:focus,
 .open > .dropdown-toggle.btn-info:hover { 
-  color:@invers-text;
-  background-color:@info;
-  border-color:@info;
+  color: @inverse-text;
+  background-color: @info;
+  border-color: @info;
 }
 
 .btn-info.focus,
 .btn-info:focus {
-  color:@inverse-text;
-  background-color:@info;
-  border-color:@info;
+  color: @inverse-text;
+  background-color: @info;
+  border-color: @info;
 }
 
 .btn {
@@ -746,6 +750,18 @@ fieldset[disabled] .btn-info.active {
   font-size: 13px;
   line-height: 1.5;
   border-radius: 0;
+}
+
+.btn-group-vertical>.btn:first-child:not(:last-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.btn-group-vertical>.btn:last-child:not(:first-child) {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 /************
@@ -1591,6 +1607,14 @@ FORMS
   -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group {
+  margin-left: 0;
+}
+
+.input-group-addon {
+  border-radius: 0;
 }
 
 .has-warning .input-group-addon {
