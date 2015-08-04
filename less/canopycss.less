@@ -44,7 +44,7 @@ IF IT'S A CUSTOM FONT THE @font-face FILE LINKS AT THE TOP OF THIS FILE SHOULD A
 ********************/
 
 @header-font: Stag;
-@header-color: #0066a2; /** ADD TO PLACES **/
+@header-text-color: #0066a2; /** ADD TO PLACES **/
 
 /*********************
 HEADER / NAVBAR
@@ -58,7 +58,7 @@ HEADER / NAVBAR
 @navbar-bottom-border-width: 6px;
 @navbar-brand-text: transparent;
 @navbar-brand-logo: url("../images/brand.png") no-repeat;
-@navbar-text: #0066a2;
+@navbar-text: black;
 @navbar-border: #ffffff #ffffff #0066a2 #ffffff;
 @navbar-brand-width: 178px;
 @navbar-brand-height: 52px;
@@ -187,6 +187,9 @@ BUTTON HOVER BACKGROUND
 @success-hover: #2f8912;
 @primary-hover: #0066a2;
 @default-hover: transparent;
+
+
+@dropdown-hover: #004A75;
 
 /********************
 LIST
@@ -325,22 +328,27 @@ blockquote .small {
 
 h1 {
   font-family: @header-font;
+  color: @header-text-color;
 }
 
 h2 {
   font-family: @header-font;
+  color: @header-text-color;
 }
 
 h3 {
   font-family: @header-font;
+  color: @header-text-color;
 }
 
 h4 {
   font-family: @header-font;
+  color: @header-text-color;
 }
 
 h5 {
 	font-family: @header-font;
+  color: @header-text-color;
 }
 
 /**********************
@@ -447,14 +455,14 @@ BUTTONS
 	background-color: @default;
 	border-color: #cccccc;
   border: 1px solid #cccccc !important;
-	color: @main-text;
+	color: @header-text-color;
 }
 
 .btn-default:hover{
 	background-color: @default;
   border-color: #cccccc;
   border: 1px solid #cccccc;
-	color: @main-text;
+	color: @header-text-color;
 }
 
 .btn-default:focus,
@@ -632,6 +640,7 @@ fieldset[disabled] .btn-info.active {
 .btn {
   display: inline-block;
   margin-bottom: 0;
+  font-family: @header-font;
   font-weight: normal;
   text-align: center;
   vertical-align: middle;
@@ -675,7 +684,7 @@ fieldset[disabled] .btn-info.active {
 }
 .navbar-default .btn-link:hover,
 .navbar-default .btn-link:focus {
-  color: @link-text;
+  color: @navbar-text;
   text-decoration: @link-decoration;
 }
 
@@ -844,7 +853,7 @@ NAVBAR
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
   background-color: @navbar-open-bg;
-  color: @navbar-open-text;
+  color: @navbar-text;
   font-family: @header-font;
 }
 
@@ -872,14 +881,14 @@ NAVBAR
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
 	color: @inverse-text;
-	background-color: @primary-hover;
+	background-color: @dropdown-hover;
 }
 
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
 	color: @inverse-text;
-	background-color: @primary-hover;
+	background-color: @dropdown-hover;
 }
 
 /*************************
@@ -923,7 +932,7 @@ DROPDOWN MENU
 .dropdown-menu > li > a:focus {
   text-decoration: none;
   color: @inverse-text;
-  background-color: @primary-hover;
+  background-color: @dropdown-hover;
 }
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
@@ -1876,4 +1885,74 @@ MISC
 
 .footer-space {
 	height: @footer-height + 20px;
+}
+
+
+/***********************
+ALTERNATEIVE FOOTER
+***********************/
+
+.alt-footer {
+  position: relative;
+  margin-left: -100px;
+  margin-right: -100px;
+  margin-bottom: 0;
+}
+
+.partners {
+  background-color: white;
+  height: auto;
+  border-top: 1px solid black;
+  margin-top: 15px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  align-content: center;
+  text-align: center;
+  color: #0066a2;
+  font-family: Stag;
+}
+
+.partner-logos {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.site-links {
+  background-color: #0066a2;
+  color: white !important;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-content: center;
+  text-align: center;
+}
+
+.site-links > ul {
+  font-family: Stag;
+  display: inline-block;
+  margin-left: 20px;
+  list-style-type: none;
+}
+
+.site-links > ul:first-child {
+  margin-left: -20px;
+}
+
+.site-links > ul > li > a {
+  color: white;
+  font-family: @main-font;
+}
+
+.copyright-footer {
+  background-color: white;
+  height: 54px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.policy-links {
+  display: inline-block;
+}
+
+.policy-links > a {
+  margin-left: 30px;
 }

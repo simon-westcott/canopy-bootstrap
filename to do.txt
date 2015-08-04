@@ -1,7 +1,7 @@
 continuously review rebranding guidelines
 change header fonts to blue
 change link texts to blue
-btn-default text color
+btn-default text color and hover
 navbar link text color
 
 navbar border triangle;

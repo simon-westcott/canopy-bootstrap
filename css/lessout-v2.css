@@ -24,6 +24,7 @@ THIS IS THE ONE WE'VE USED TO DISPLAY ON BUTTONS/COLORED OBJECTS
 HEADING / TITLE FONT
 IF IT'S A CUSTOM FONT THE @font-face FILE LINKS AT THE TOP OF THIS FILE SHOULD ALSO BE EDITED
 ********************/
+/** ADD TO PLACES **/
 /*********************
 HEADER / NAVBAR
 **********************/
@@ -102,7 +103,7 @@ UNLESS ADDING FULLY CUSTOM CSS, THERE SHOULD BE NO NEED TO EDIT ANYTHING BELOW H
 *************************************************************************************/
 body {
   background-color: #f6f5f5;
-  color: #0066a2;
+  color: #black;
   font-family: Verdana, Arial;
   padding: 0px 100px 0px 100px;
   display: block;
@@ -114,7 +115,7 @@ legend {
   margin-bottom: 21px;
   font-size: 22.5px;
   line-height: inherit;
-  color: #0066a2;
+  color: #black;
   border: 0;
   border-bottom: 1px solid #e5e5e5;
   font-family: Stag;
@@ -129,22 +130,27 @@ blockquote .small {
   display: block;
   font-size: 80%;
   line-height: 1.42857143;
-  color: #0066a2 !important;
+  color: #black !important;
 }
 h1 {
   font-family: Stag;
+  color: #0066a2;
 }
 h2 {
   font-family: Stag;
+  color: #0066a2;
 }
 h3 {
   font-family: Stag;
+  color: #0066a2;
 }
 h4 {
   font-family: Stag;
+  color: #0066a2;
 }
 h5 {
   font-family: Stag;
+  color: #0066a2;
 }
 /**********************
 ***********************
@@ -234,24 +240,26 @@ BUTTONS
 *********************/
 .btn-default {
   background-color: #ffffff;
-  border-color: #ffffff;
+  border-color: #cccccc;
+  border: 1px solid #cccccc !important;
   color: #0066a2;
 }
 .btn-default:hover {
   background-color: #ffffff;
-  border-color: #ffffff;
+  border-color: #cccccc;
+  border: 1px solid #cccccc;
   color: #0066a2;
 }
 .btn-default:focus,
 .btn-default.focus {
-  color: #0066a2;
+  color: #black;
   background-color: #ffffff;
   border-color: #ffffff;
 }
 .btn-default:active,
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
-  color: #0066a2;
+  color: #black;
   background-color: #ffffff;
   border-color: #ffffff;
 }
@@ -264,7 +272,7 @@ BUTTONS
 .btn-default:active.focus,
 .btn-default.active.focus,
 .open > .dropdown-toggle.btn-default.focus {
-  color: #0066a2;
+  color: #black;
   background-color: #ffffff;
   border-color: #ffffff;
 }
@@ -376,7 +384,7 @@ fieldset[disabled] .btn-info.active {
 .btn-info.active,
 .btn-info:active,
 .open > .dropdown-toggle.btn-info {
-  color: #fff;
+  color: #ffffff;
   background-color: #7a42b3;
   border-color: #7a42b3;
 }
@@ -389,19 +397,20 @@ fieldset[disabled] .btn-info.active {
 .open > .dropdown-toggle.btn-info.focus,
 .open > .dropdown-toggle.btn-info:focus,
 .open > .dropdown-toggle.btn-info:hover {
-  color: #fff;
+  color: #ffffff;
   background-color: #7a42b3;
   border-color: #7a42b3;
 }
 .btn-info.focus,
 .btn-info:focus {
-  color: #fff;
+  color: #ffffff;
   background-color: #7a42b3;
   border-color: #7a42b3;
 }
 .btn {
   display: inline-block;
   margin-bottom: 0;
+  font-family: Stag;
   font-weight: normal;
   text-align: center;
   vertical-align: middle;
@@ -441,7 +450,7 @@ fieldset[disabled] .btn-info.active {
 }
 .navbar-default .btn-link:hover,
 .navbar-default .btn-link:focus {
-  color: #0066a2;
+  color: black;
   text-decoration: underline;
 }
 .navbar > .container .navbar-brand,
@@ -514,6 +523,16 @@ fieldset[disabled] .btn-info.active {
   line-height: 1.5;
   border-radius: 0;
 }
+.btn-group-vertical > .btn:first-child:not(:last-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.btn-group-vertical > .btn:last-child:not(:first-child) {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
 /************
 menu triangles
 ***********/
@@ -535,7 +554,7 @@ NAVBAR
 .navbar-default {
   display: block;
   background-color: #ffffff;
-  color: #0066a2;
+  color: #black;
   border-style: solid;
   border-bottom-width: 6px;
   border-left-width: 0px;
@@ -562,7 +581,7 @@ NAVBAR
   height: 52px;
 }
 .navbar-default .navbar-text {
-  color: #0066a2;
+  color: black;
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
@@ -570,35 +589,35 @@ NAVBAR
   padding-top: 5px;
 }
 .navbar-default .navbar-text {
-  color: #0066a2;
+  color: black;
   font-family: Stag;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #0066a2;
+  color: black;
   font-family: Stag;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #0066a2;
+  color: black;
   background-color: #ffffff;
 }
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
   background-color: transparent;
-  color: #0066a2;
+  color: black;
   font-family: Stag;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #0066a2;
+  color: black;
   background-color: #ffffff;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #0066a2;
+  color: black;
   background-color: #ffffff;
   text-decoration: none;
 }
@@ -610,13 +629,13 @@ NAVBAR
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
   color: #ffffff;
-  background-color: #0066a2;
+  background-color: #004a75;
 }
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
   color: #ffffff;
-  background-color: #0066a2;
+  background-color: #004a75;
 }
 /*************************
 DROPDOWN MENU
@@ -657,7 +676,7 @@ DROPDOWN MENU
 .dropdown-menu > li > a:focus {
   text-decoration: none;
   color: #ffffff;
-  background-color: #0066a2;
+  background-color: #004a75;
 }
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
@@ -732,12 +751,12 @@ button.list-group-item:hover,
 a.list-group-item:focus,
 button.list-group-item:focus {
   text-decoration: none;
-  color: #0066a2;
+  color: #black;
   background-color: #f6f5f5;
 }
 a.list-group-item,
 button.list-group-item {
-  color: #0066a2;
+  color: #black;
 }
 .list-group-item-warning {
   color: #ffffff;
@@ -776,7 +795,7 @@ button.list-group-item-info:focus {
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: #0066a2;
+  color: #black;
 }
 /********************
 *********************
@@ -835,7 +854,7 @@ LABELS
 }
 .label-default {
   background-color: #ffffff;
-  color: #0066a2;
+  color: #black;
 }
 .label-default[href]:hover,
 .label-default[href]:focus {
@@ -880,7 +899,7 @@ PILLS AND BADGES
 }
 .list-group-item.active > .badge,
 .nav-pills > .active > a > .badge {
-  color: #0066a2;
+  color: #black;
   background-color: #0066a2;
 }
 .nav-pills > li.active > a,
@@ -908,7 +927,7 @@ TABS
   line-height: 1.42857143;
   border: 1px solid transparent;
   border-radius: 0 0 0 0;
-  color: #0066a2;
+  color: #black;
 }
 .nav-tabs > li > a:hover {
   border-color: #f6f5f5 #f6f5f5 #f6f5f5;
@@ -951,7 +970,7 @@ PAGINATION
   padding: 10px 18px;
   line-height: 1.42857143;
   text-decoration: none;
-  color: #0066a2;
+  color: #black;
   background-color: #ffffff;
   border: 1px solid #dddddd;
   margin-left: -1px;
@@ -971,7 +990,7 @@ BREADCRUMBS
 .breadcrumb > li + li:before {
   content: "/\00a0";
   padding: 0 5px;
-  color: #0066a2;
+  color: #black;
 }
 .breadcrumb > .active {
   color: #808080;
@@ -986,7 +1005,7 @@ Pager
   display: inline-block;
   padding: 5px 14px;
   background-color: #ffffff;
-  color: #0066a2;
+  color: #black;
   border: 1px solid #dddddd;
   border-radius: 0;
 }
@@ -1011,7 +1030,7 @@ TABLES
 **********************/
 .table .table {
   background-color: #ffffff;
-  color: #0066a2;
+  color: #black;
 }
 .table > thead > tr > td.info,
 .table > tbody > tr > td.info,
@@ -1125,7 +1144,7 @@ PANELS
   border-top-left-radius: 0;
 }
 .panel-default > .panel-heading {
-  color: #0066a2;
+  color: #black;
   background-color: #f6f5f5;
   border-color: #dddddd;
   font-family: Stag;
@@ -1150,7 +1169,7 @@ PANELS
   border-top-color: #0066a2;
 }
 .panel-primary > .panel-heading .badge {
-  color: #0066a2;
+  color: #black;
   background-color: #ffffff;
 }
 .panel-primary > .panel-footer + .panel-collapse > .panel-body {
@@ -1243,7 +1262,7 @@ FORMS
   padding: 10px 18px;
   font-size: 15px;
   line-height: 1.42857143;
-  color: #0066a2;
+  color: #black;
   background-color: #ffffff;
   background-image: none;
   border: 1px solid #cccccc;
@@ -1253,6 +1272,13 @@ FORMS
   -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
   -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+.input-group-btn:last-child > .btn,
+.input-group-btn:last-child > .btn-group {
+  margin-left: 0;
+}
+.input-group-addon {
+  border-radius: 0;
 }
 .has-warning .input-group-addon {
   color: #ffffff;
@@ -1484,4 +1510,62 @@ MISC
 }
 .footer-space {
   height: 80px;
+}
+/***********************
+ALTERNATEIVE FOOTER
+***********************/
+.alt-footer {
+  position: relative;
+  margin-left: -100px;
+  margin-right: -100px;
+  margin-bottom: 0;
+}
+.partners {
+  background-color: white;
+  height: auto;
+  border-top: 1px solid black;
+  margin-top: 15px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  align-content: center;
+  text-align: center;
+  color: #0066a2;
+  font-family: Stag;
+}
+.partner-logos {
+  display: inline-block;
+  margin: 0 10px;
+}
+.site-links {
+  background-color: #0066a2;
+  color: white !important;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-content: center;
+  text-align: center;
+}
+.site-links > ul {
+  font-family: Stag;
+  display: inline-block;
+  margin-left: 20px;
+  list-style-type: none;
+}
+.site-links > ul:first-child {
+  margin-left: -20px;
+}
+.site-links > ul > li > a {
+  color: white;
+  font-family: Verdana, Arial;
+}
+.copyright-footer {
+  background-color: white;
+  height: 54px;
+  text-align: center;
+  padding-top: 15px;
+}
+.policy-links {
+  display: inline-block;
+}
+.policy-links > a {
+  margin-left: 30px;
 }
