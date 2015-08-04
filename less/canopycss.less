@@ -1920,8 +1920,8 @@ ALTERNATEIVE FOOTER
 .site-links {
   background-color: #0066a2;
   color: white !important;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   align-content: center;
   text-align: center;
 }
@@ -1929,17 +1929,23 @@ ALTERNATEIVE FOOTER
 .site-links > ul {
   font-family: Stag;
   display: inline-block;
-  margin-left: 20px;
+  margin-right: 100px;
   list-style-type: none;
+  text-align: left;
 }
 
-.site-links > ul:first-child {
-  margin-left: -20px;
+.site-links > ul:last-child {
+  margin-right: 0px;
+}
+
+.site-links > ul > li:first-child {
+  margin-top: 20px;
 }
 
 .site-links > ul > li > a {
   color: white;
   font-family: @main-font;
+  text-align: left;
 }
 
 .copyright-footer {
