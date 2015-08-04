@@ -154,7 +154,7 @@ COLORED AREA BACKGROUNDS
 @danger: #ff0000;
 @success: #3fb618;
 @primary: #0066a2;
-@default: transparent;
+@default: #ffffff;
 @disabled: #000000;
 
 /*********************
@@ -183,7 +183,7 @@ BUTTON HOVER BACKGROUND
 @warning-hover: #E65E35;
 @danger-hover: #CC0000;
 @success-hover: #2f8912;
-@primary-hover: #004A75;
+@primary-hover: #0066a2;
 @default-hover: transparent;
 
 /********************
@@ -511,6 +511,7 @@ fieldset[disabled] .btn-default.active {
 
 .btn-primary:hover {
 	background-color: @primary-hover;
+  border-color: @primary-hover;
 }
 
 .btn-primary:active,
@@ -552,6 +553,14 @@ fieldset[disabled] .btn-default.active {
   background-color: @info;
   border-color: @info;
 }
+
+.btn-info:active,
+.btn-info.active,
+.open > .dropdown-toggle.btn-info {
+  background-image: none;
+  background-color: @info;
+}
+
 .btn-info:active:hover,
 .btn-info.active:hover,
 .open > .dropdown-toggle.btn-info:hover,
@@ -586,6 +595,34 @@ fieldset[disabled] .btn-info:active,
 fieldset[disabled] .btn-info.active {
   background-color: @info;
   border-color: @info;
+}
+
+.btn-info:active {
+  background-color: @info;
+}
+
+.btn-info.active,
+.btn-info:active,.open > .dropdown-toggle.btn-info {
+  color:@inverse-text;
+  background-color: @info;
+  border-color: @info;
+}
+
+.btn-info.active.focus,.btn-info.active:focus,
+.btn-info.active:hover,.btn-info:active.focus,
+.btn-info:active:focus,.btn-info:active:hover,
+.open > .dropdown-toggle.btn-info.focus,.open>.dropdown-toggle.btn-info:focus,
+.open > .dropdown-toggle.btn-info:hover { 
+  color:@invers-text;
+  background-color:@info;
+  border-color:@info;
+}
+
+.btn-info.focus,
+.btn-info:focus {
+  color:@inverse-text;
+  background-color:@info;
+  border-color:@info;
 }
 
 .btn {
@@ -775,10 +812,11 @@ NAVBAR
 
 .navbar-default .navbar-text {
   color: @navbar-text;
-  font: @header-font;
+  font-family: @header-font;
 }
 .navbar-default .navbar-nav > li > a {
   color: @navbar-text;
+  font-family: @header-font;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
@@ -791,6 +829,7 @@ NAVBAR
 .navbar-default .navbar-nav > .open > a:focus {
   background-color: @navbar-open-bg;
   color: @navbar-open-text;
+  font-family: @header-font;
 }
 
 .navbar-default .navbar-nav > .active > a,
@@ -811,6 +850,7 @@ NAVBAR
 .navbar-default .navbar-nav .open .dropdown-menu > li > a {
 	color: @inverse-text;
 	background-color: @primary;
+  font-family: @header-font;
 }
 
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
