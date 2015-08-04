@@ -1,7 +1,8 @@
 continuously review rebranding guidelines
-info dropdown active
-modals
-alert link colors
+change header fonts to blue
+change link texts to blue
+btn-default text color
+navbar link text color
 
 navbar border triangle;
 
