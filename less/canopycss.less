@@ -891,6 +891,14 @@ NAVBAR
 	background-color: @dropdown-hover;
 }
 
+.navbar-default .navbar-nav > li {
+  margin-top: 5px;
+}
+
+.navbar-default .navbar-nav > li:first-child {
+  margin-left: 5px;
+}
+
 /*************************
 DROPDOWN MENU
 *************************/
@@ -1143,7 +1151,7 @@ LABELS
 
 .label-default {
   background-color: @default;
-  color: @main-text;
+  color: @header-text-color;
 }
 
 .label-default[href]:hover,
@@ -1951,14 +1959,64 @@ ALTERNATEIVE FOOTER
 .copyright-footer {
   background-color: white;
   height: 54px;
-  text-align: center;
-  padding-top: 15px;
+  padding-top: 10px;
 }
 
 .policy-links {
   display: inline-block;
+  float: left;
+  padding-left: 20px;
+  padding-top: 5px;
 }
 
 .policy-links > a {
   margin-left: 30px;
+}
+
+.policy-links > span {
+  margin-left: 50px;
+}
+
+.social-links {
+  float: right;
+  display: inline-block;
+}
+
+.facebook {
+  width: 100%;
+  height: 100%;
+  background: url("../images/facebook.png") no-repeat;
+}
+
+.twitter {
+  width: 100%;
+  height: 100%;
+  background: url("../images/twitter.png") no-repeat;
+}
+
+.linkedin {
+  width: 100%;
+  height: 100%;
+  background: url("../images/linkedin.png") no-repeat;
+}
+
+.youtube {
+  width: 100%;
+  height: 100%;
+  background: url("../images/youtube.png") no-repeat;
+}
+
+.social-links > a {
+  width: 32px;
+  height: 33px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-links > a:hover {
+  opacity: 0.6;
+}
+
+.social-links > a:last-child {
+  margin-right: 50px;
 }
