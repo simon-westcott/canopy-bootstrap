@@ -884,6 +884,15 @@ PROGRESS BAR
 ******************
 *****************/
 
+.progress {
+  overflow: hidden;
+  height: 10px;
+  margin-bottom: 10px;
+  background-color: #cccccc;
+  border-radius: 0;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
 
 .progress .progress-bar {
   font-size: 8px;
@@ -1006,6 +1015,13 @@ ALERTS
 *********************
 ********************/
 
+.alert {
+  padding: 15px;
+  margin-bottom: 21px;
+  border: 1px solid transparent;
+  border-radius: 0;
+}
+
 .alert-success {
   background-color: @success;
   border-color: @success;
@@ -1056,6 +1072,10 @@ LABELS
 ********************
 *******************/
 
+.label {
+  border-radius: 0;
+}
+
 .label-default {
   background-color: @default;
   color: @main-text;
@@ -1097,6 +1117,21 @@ LABELS
 PILLS AND BADGES
 **********************
 *********************/
+
+.nav-pills > li > a {
+  border-radius: 0;
+}
+
+.list-group-item:first-child {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.list-group-item:last-child {
+  margin-bottom: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
 
 .list-group-item.active > .badge,
 .nav-pills > .active > a > .badge {
@@ -1144,6 +1179,26 @@ TABS
 PAGINATION
 *********************
 ********************/
+
+.pagination {
+  display: inline-block;
+  padding-left: 0;
+  margin: 21px 0;
+  border-radius: 0;
+}
+
+.pagination > li:first-child > a,
+.pagination > li:first-child > span {
+  margin-left: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
 
 .pagination > li > a:hover,
 .pagination > li > span:hover,
@@ -1338,11 +1393,35 @@ PANELS
 ***************************
 **************************/
 
+.panel {
+  margin-bottom: 21px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 0;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.panel-heading {
+  padding: 10px 15px;
+  border-bottom: 1px solid #cccccc;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
 .panel-default > .panel-heading {
   color: @main-text;
   background-color: @bg-color;
   border-color: @panel-border-color;
   font-family: @header-font;
+}
+
+.panel-footer {
+  padding: 10px 15px;
+  background-color: #f5f5f5;
+  border-top: 1px solid #cccccc;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .panel-primary {
