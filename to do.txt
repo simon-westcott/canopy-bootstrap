@@ -32,20 +32,20 @@ content: ' ';
 
 
 
-  .footer {
-	display: block;
-	height: @footer-height;
-	width: @footer-width;
-	background-color: @footer-bg;
-	border-top: @footer-border-top;
-	box-shadow: @footer-box-shadow;
-	-webkit-box-shadow: @footer-box-shadow;
-	-moz-box-shadow: @footer-box-shadow;
-	position: fixed;
-	bottom: @footer-bottom;
-	left: @footer-left;
-	text-align: @footer-text-align;
-	z-index: 2000;
+.footer {
+display: block;
+height: @footer-height;
+width: @footer-width;
+background-color: @footer-bg;
+border-top: @footer-border-top;
+box-shadow: @footer-box-shadow;
+-webkit-box-shadow: @footer-box-shadow;
+-moz-box-shadow: @footer-box-shadow;
+position: fixed;
+bottom: @footer-bottom;
+left: @footer-left;
+text-align: @footer-text-align;
+z-index: 2000;
 }
 
 
