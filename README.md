@@ -23,3 +23,5 @@ warning:hover to #E65E35 //
 21-7-15 jsfiddle demo https://jsfiddle.net/wpemzp91/3/
 
 Original style taken from: https://bootswatch.com/cosmo/ and used as a template.
+
+A good guide on how to use twitter bootstrap and the included classes is here: http://getbootstrap.com/css/
