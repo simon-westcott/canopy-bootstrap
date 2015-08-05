@@ -70,6 +70,41 @@ HEADER / NAVBAR
 @navbar-open-bg: transparent;
 @navbar-open-text: @primary;
 
+/***************************
+INVERSE NAVBAR
+***************************/
+
+@inverse-navbar-link-border: 2px solid white;
+@inverse-navbar-link-font: @header-font;
+@inverse-navbar-first-link-margin-left: 50px;
+@inverse-navbar-first-child-border-color-left: 2px solid transparent;
+@inverse-navbar-background: #ffffff;
+@inverse-navbar-border-color: transparent;
+@inverse-navbar-brand-text-color: #ffffff;
+@inverse-navbar-brand-text-color-hover: transparent;
+@inverse-navbar-brand-hover-background: none;
+@inverse-navbar-text-color: #ffffff;
+@inverse-navbar-dropdown-link-color: #ffffff;
+@inverse-navbar-dropdown-link-background: transparent;
+@inverse-navbar-dropdown-link-height: 25px;
+@inverse-navbar-bottom-border: #404040;
+@inverse-navbar-bottom-border-height: 33px;
+@inverse-navbar-link-hover-text: #ffffff;
+@inverse-navbar-link-hover-background: #0066a2;
+@inverse-navbar-link-hover-margin-top: -4px;
+@inverse-navbar-link-hover-height: 30px;
+@inverse-navbar-link-active-text: #2EB8E6;
+@inverse-navbar-link-active-background: transparent;
+@inverse-navbar-link-disabled-text: #ffffff;
+@inverse-navbar-link-disabled-background: transparent;
+@inverse-navbar-border-color: transparent;
+@inverse-navbar-hover-background: #1967be;
+@inverse-navbar-icon-background: #ffffff;
+@inverse-navbar-search-float: right;
+@inverse-navbar-link-background-color: #1967be;
+@inverse-navbar-link-text-color: #ffffff;
+@inverse-navbar-search-border-color:#1a6ecc;
+
 
 /************************
 MENU DROPDOWN TRIANGLE
@@ -103,6 +138,54 @@ FOOTER
 @footer-text-align: center;
 @footer-text-margin: auto;
 @footer-text-margin-top: 20px;
+
+
+/***********************
+ALTERNATIVE FOOTER
+***********************/
+
+@alt-footer-margin-left: -100px;
+@alt-footer-margin-right: -100px;
+@partners-background-color: white;
+@partners-height: auto;
+@partners-border-top: 1px solid black;
+@partners-margin-top: 15px;
+@partners-padding-top: 30px;
+@partners-padding-bottom: 40px;
+@partners-text-color: #0066a2;
+@partners-font-family: @header-font;
+@partner-logos-margin: 0 10px;
+@site-links-background-color: #0066a2;
+@site-links-text-color: #ffffff !important;
+@site-links-padding-top: 30px;
+@site-links-padding-bottom: 30px;
+@site-links-text-align: center;
+@site-links-list-header-font-family: @header-font;
+@site-links-list-header-margin-right: 100px;
+@site-links-list-style-type: none;
+@site-links-list-text-align: left;
+@site-links-list-border-left: 3px solid white;
+@site-links-list-first-child-border-left: 0px solid transparent;
+@site-links-list-last-child-margin-right: 0px;
+@site-links-list-link-first-child-margin-top: 20px;
+@site-links-list-link-padding-left: 10px;
+@site-links-list-link-text-color: #ffffff;
+@site-links-list-link-font: @main-font;
+@site-links-list-link-text-align: left;
+@copyright-background-color: #ffffff;
+@copyright-height: 54px;
+@copyright-padding-top: 10px;
+@policy-links-float: left;
+@policy-links-padding-left: 20px;
+@policy-links-padding-top: 5px;
+@policy-links-link-margin-left: 30px;
+@policy-links-copyright-margin-left: 50px;
+@social-links-float: right;
+@social-links-link-width: 32px;
+@social-links-link-height: 33px;
+@social-links-link-margin-right: 10px;
+@social-links-link-hover-opacity: 0.6;
+@social-links-link-last-margin-right: 50px;
 
 /*******************************************
 CURSOR DISPLAYED ON A DISABLED LINK/BUTTON
@@ -1902,83 +1985,90 @@ ALTERNATEIVE FOOTER
 
 .alt-footer {
   position: relative;
-  margin-left: -100px;
-  margin-right: -100px;
+  margin-left: @alt-footer-margin-left;
+  margin-right: @alt-footer-margin-right;
   margin-bottom: 0;
 }
 
 .partners {
-  background-color: white;
-  height: auto;
-  border-top: 1px solid black;
-  margin-top: 15px;
-  padding-top: 30px;
-  padding-bottom: 40px;
-  align-content: center;
+  background-color: @partners-background-color;
+  height: @partners-height;
+  border-top: @partners-border-top;
+  margin-top: @partners-margin-top;
+  padding-top: @partners-padding-top;
+  padding-bottom: @partners-padding-bottom;
   text-align: center;
-  color: #0066a2;
-  font-family: Stag;
+  color: @partners-text-color;
+  font-family: @partners-font-family;
 }
 
 .partner-logos {
   display: inline-block;
-  margin: 0 10px;
+  margin: @partner-logos-margin;
 }
 
 .site-links {
-  background-color: #0066a2;
-  color: white !important;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  align-content: center;
-  text-align: center;
+  background-color: @site-links-background-color;
+  color: @site-links-text-color;
+  padding-top: @site-links-padding-top;
+  padding-bottom: @site-links-padding-bottom;
+  text-align: @site-links-text-align;
 }
 
 .site-links > ul {
-  font-family: Stag;
+  font-family: @site-links-list-header-font-family;
   display: inline-block;
-  margin-right: 100px;
-  list-style-type: none;
-  text-align: left;
+  margin-right: @site-links-list-header-margin-right;
+  list-style-type: @site-links-list-style-type;
+  text-align: @site-links-list-text-align;
+  border-left: @site-links-list-border-left;
+}
+
+.site-links > ul:first-child {
+  border-left: @site-links-list-first-child-border-left;
 }
 
 .site-links > ul:last-child {
-  margin-right: 0px;
+  margin-right: @site-links-list-last-child-margin-right;
 }
 
 .site-links > ul > li:first-child {
-  margin-top: 20px;
+  margin-top: @site-links-list-link-first-child-margin-top;
+}
+
+.site-links > ul > li {
+  padding-left: @site-links-list-link-padding-left;
 }
 
 .site-links > ul > li > a {
-  color: white;
-  font-family: @main-font;
-  text-align: left;
+  color: @site-links-list-link-text-color;
+  font-family: @site-links-list-link-font;
+  text-align: @site-links-list-link-text-align;
 }
 
 .copyright-footer {
-  background-color: white;
-  height: 54px;
-  padding-top: 10px;
+  background-color: @copyright-background-color;
+  height: @copyright-height;
+  padding-top: @copyright-padding-top;
 }
 
 .policy-links {
   display: inline-block;
-  float: left;
-  padding-left: 20px;
-  padding-top: 5px;
+  float: @policy-links-float;
+  padding-left: @policy-links-padding-left;
+  padding-top: @policy-links-padding-top;
 }
 
 .policy-links > a {
-  margin-left: 30px;
+  margin-left: @policy-links-link-margin-left;
 }
 
 .policy-links > span {
-  margin-left: 50px;
+  margin-left: @policy-links-copyright-margin-left;
 }
 
 .social-links {
-  float: right;
+  float: @social-links-float;
   display: inline-block;
 }
 
@@ -2007,16 +2097,112 @@ ALTERNATEIVE FOOTER
 }
 
 .social-links > a {
-  width: 32px;
-  height: 33px;
+  width: @social-links-link-width;
+  height: @social-links-link-height;
   display: inline-block;
-  margin-right: 10px;
+  margin-right: @social-links-link-margin-right;
 }
 
 .social-links > a:hover {
-  opacity: 0.6;
+  opacity: @social-links-link-hover-opacity;
 }
 
 .social-links > a:last-child {
-  margin-right: 50px;
+  margin-right: @social-links-link-last-margin-right;
+}
+
+.navbar-inverse {
+  background-color: @inverse-navbar-background;
+  border-color: @inverse-navbar-border-color;
+}
+
+.navbar-inverse .navbar-brand {
+  color: @inverse-navbar-brand-text-color;
+}
+
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+  color: @inverse-navbar-brand-text-color-hover;
+  background-color: @inverse-navbar-brand-hover-background;
+}
+
+.navbar-inverse .navbar-text {
+  color: @inverse-navbar-text-color;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: @inverse-navbar-dropdown-link-color;
+  background-color: @inverse-navbar-dropdown-link-background;
+  height: @inverse-navbar-dropdown-link-height;
+  padding-top: 2px;
+}
+
+.navbar-inverse .navbar-nav > li {
+  border-left: @inverse-navbar-link-border;
+  font-family: @inverse-navbar-link-font;
+}
+
+.navbar-inverse .navbar-nav > li:first-child {
+  margin-left: @inverse-navbar-first-link-margin-left;
+  border-left: @inverse-navbar-first-child-border-color-left;
+}
+
+.navbar-inverse-border {
+  background-color: @inverse-navbar-bottom-border;
+  width: 100%;
+  height: @inverse-navbar-bottom-border-height;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-top: 20px;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: @inverse-navbar-link-hover-text;
+  background-color: @inverse-navbar-link-hover-background;
+  margin-top: @inverse-navbar-link-hover-margin-top;
+  padding-top: 5px;
+  height: @inverse-navbar-link-hover-height;
+  margin-bottom: 0px;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: @inverse-navbar-link-active-text;
+  background-color: @inverse-navbar-link-active-background;
+}
+
+.navbar-inverse .navbar-nav > .disabled > a,
+.navbar-inverse .navbar-nav > .disabled > a:hover,
+.navbar-inverse .navbar-nav > .disabled > a:focus {
+  color: @inverse-navbar-link-disabled-text;
+  background-color: @inverse-navbar-link-disabled-background;
+}
+
+.navbar-inverse .navbar-toggle {
+  border-color: @inverse-navbar-border-color;
+}
+
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+  background-color: @inverse-navbar-hover-background;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: @inverse-navbar-icon-background;
+}
+
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+  float: @inverse-navbar-search-float;
+  margin-top: 10px;
+  border-color: @inverse-navbar-search-border-color;
+}
+
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+  background-color: @inverse-navbar-link-background-color;
+  color: @inverse-navbar-link-text-color;
 }

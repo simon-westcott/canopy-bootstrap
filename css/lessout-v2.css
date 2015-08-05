@@ -28,6 +28,9 @@ IF IT'S A CUSTOM FONT THE @font-face FILE LINKS AT THE TOP OF THIS FILE SHOULD A
 /*********************
 HEADER / NAVBAR
 **********************/
+/***************************
+INVERSE NAVBAR
+***************************/
 /************************
 MENU DROPDOWN TRIANGLE
 ************************/
@@ -37,6 +40,9 @@ NAV TABS
 /*******************
 FOOTER
 *******************/
+/***********************
+ALTERNATIVE FOOTER
+***********************/
 /*******************************************
 CURSOR DISPLAYED ON A DISABLED LINK/BUTTON
 ********************************************/
@@ -1533,7 +1539,6 @@ ALTERNATEIVE FOOTER
   margin-top: 15px;
   padding-top: 30px;
   padding-bottom: 40px;
-  align-content: center;
   text-align: center;
   color: #0066a2;
   font-family: Stag;
@@ -1544,10 +1549,9 @@ ALTERNATEIVE FOOTER
 }
 .site-links {
   background-color: #0066a2;
-  color: white !important;
+  color: #ffffff !important;
   padding-top: 30px;
   padding-bottom: 30px;
-  align-content: center;
   text-align: center;
 }
 .site-links > ul {
@@ -1556,6 +1560,10 @@ ALTERNATEIVE FOOTER
   margin-right: 100px;
   list-style-type: none;
   text-align: left;
+  border-left: 3px solid white;
+}
+.site-links > ul:first-child {
+  border-left: 0px solid transparent;
 }
 .site-links > ul:last-child {
   margin-right: 0px;
@@ -1563,13 +1571,16 @@ ALTERNATEIVE FOOTER
 .site-links > ul > li:first-child {
   margin-top: 20px;
 }
+.site-links > ul > li {
+  padding-left: 10px;
+}
 .site-links > ul > li > a {
-  color: white;
+  color: #ffffff;
   font-family: Verdana, Arial;
   text-align: left;
 }
 .copyright-footer {
-  background-color: white;
+  background-color: #ffffff;
   height: 54px;
   padding-top: 10px;
 }
@@ -1620,4 +1631,84 @@ ALTERNATEIVE FOOTER
 }
 .social-links > a:last-child {
   margin-right: 50px;
+}
+.navbar-inverse {
+  background-color: #ffffff;
+  border-color: transparent;
+}
+.navbar-inverse .navbar-brand {
+  color: #ffffff;
+}
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+  color: transparent;
+  background-color: none;
+}
+.navbar-inverse .navbar-text {
+  color: #ffffff;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: #ffffff;
+  background-color: transparent;
+  height: 25px;
+  padding-top: 2px;
+}
+.navbar-inverse .navbar-nav > li {
+  border-left: 2px solid white;
+  font-family: Stag;
+}
+.navbar-inverse .navbar-nav > li:first-child {
+  margin-left: 50px;
+  border-left: 2px solid transparent;
+}
+.navbar-inverse-border {
+  background-color: #404040;
+  width: 100%;
+  height: 33px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-top: 20px;
+}
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #ffffff;
+  background-color: #0066a2;
+  margin-top: -4px;
+  padding-top: 5px;
+  height: 30px;
+  margin-bottom: 0px;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: #2eb8e6;
+  background-color: transparent;
+}
+.navbar-inverse .navbar-nav > .disabled > a,
+.navbar-inverse .navbar-nav > .disabled > a:hover,
+.navbar-inverse .navbar-nav > .disabled > a:focus {
+  color: #ffffff;
+  background-color: transparent;
+}
+.navbar-inverse .navbar-toggle {
+  border-color: transparent;
+}
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+  background-color: #1967be;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+  float: right;
+  margin-top: 10px;
+  border-color: #1a6ecc;
+}
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+  background-color: #1967be;
+  color: #ffffff;
 }
