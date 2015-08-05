@@ -329,6 +329,19 @@ PANELS
 *******************/
 
 @panel-border-color: #dddddd;
+@panel-margin-bottom: 21px;
+@panel-background-color: #ffffff;
+@panel-boreder: 1px solid #cccccc;
+@panel-border-radius: 0;
+@panel-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+@panel-heading-padding: 10px 15px;
+@panel-heading-border-bottom: 1px solid #cccccc;
+@panel-heading-top-right-border-radius: 0;
+@panel-heading-top-left-border-radius: 0;
+@panel-footer-background: #f5f5f5;
+@panel-footer-border-top: 1px solid #cccccc;
+@panel-footer-bottom-right-border-radius: 0;
+@panel-footer-bottom-left-border-radius: 0;
 
 /*********************
 PAGE SELECTOR COLORS
@@ -1550,19 +1563,19 @@ PANELS
 **************************/
 
 .panel {
-  margin-bottom: 21px;
-  background-color: #ffffff;
-  border: 1px solid #cccccc;
-  border-radius: 0;
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  margin-bottom: @panel-margin-bottom;
+  background-color: @panel-background-color;
+  border: @panel-boreder;
+  border-radius: @panel-border-radius;
+  -webkit-box-shadow: @panel-shadow;
+  box-shadow: @panel-shadow;
 }
 
 .panel-heading {
-  padding: 10px 15px;
-  border-bottom: 1px solid #cccccc;
-  border-top-right-radius: 0;
-  border-top-left-radius: 0;
+  padding: @panel-heading-padding;
+  border-bottom: @panel-heading-border-bottom;
+  border-top-right-radius: @panel-heading-top-right-border-radius;
+  border-top-left-radius: @panel-heading-top-left-border-radius;
 }
 
 .panel-default > .panel-heading {
@@ -1574,10 +1587,10 @@ PANELS
 
 .panel-footer {
   padding: 10px 15px;
-  background-color: #f5f5f5;
-  border-top: 1px solid #cccccc;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
+  background-color: @panel-footer-background;
+  border-top: @panel-footer-border-top;
+  border-bottom-right-radius: @panel-footer-bottom-right-border-radius;
+  border-bottom-left-radius: @panel-footer-bottom-left-border-radius;
 }
 
 .panel-primary {
