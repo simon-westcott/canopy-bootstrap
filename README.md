@@ -4,11 +4,12 @@ This project is to create a branded bootstrap theme for Canopy products, with th
 
 This project uses less to make rebranding of the template easier. Less is a pre-compiler for the CSS styling sheet; this allows CSS to be used with greater flexability. This is done by compiling a Less file into CSS, which is then linked in the <head> of the html pages.
 
-This template builds on Twitter Bootstrap; a framework that allows for easier creation of responsive websites.
+This template builds on Twitter Bootstrap; a framework that allows for easier creation of responsive websites. A good guide on how to use twitter bootstrap and the included classes is [here](http://getbootstrap.com/css/ "bootstrap"). Using this allows us to change only what we need to rather than creating a full CSS file from scratch.
+
 
 ## Included Files
 
-The **lessout-v2.css** file changes twitter bootstrap to match the Canopy theme and should be used in addition to the normal twitter bootstrap files; these are being recovered remotely for this project.
+The **lessout-v2.css** file changes twitter bootstrap to match the Canopy theme and should be used in addition to the normal twitter bootstrap files; these are being recovered remotely for this project but should be included in the local directory.
 
 **example html.html**  shows the customized elements in this template including the header, footer, buttons and tables.
 login.html shows a simple fully html canopy branded login page.
@@ -24,9 +25,9 @@ These include:
 
 ## Rebranding
 
-To customize this for your site, follow the instructions below. The initial.css file should not be linked to in any html.
+To customize this for your site, follow the instructions below. All CSS edits should follow CSS covention, a good reference guide can be found [here](http://www.w3schools.com/cssref/default.asp "W3Schools")
 
-Your first edit should be the color scheme.
+Your first edit should be the color scheme. For bootstrap there is a set of classes that are used for aspects of the webpage: e.g. Buttons. These colors can allow for easier distinction of areas such as warnings and successes without having to change each class.
 The colors we have used for this template are as follows;
 
 * page-background: #f6f5f5;
@@ -51,35 +52,35 @@ The sections for rebranding are commented in the .less file, there should be no 
 '@' classes can refer to each other (known as nesting), as shown in the original Canopycss.less file. Any nested '@' can be changed for direct css.
 An example from the original file:
 
-	Here our table text will render as the same colour as the main text: #0066a2 (blue)
+Here our table text will render as the same colour as the main text: #0066a2 (blue)
 
 	@main-text: #0066a2;
 	@table-text: @main-text;
 
-	However, I may want our table text to be a shade of red:
+However, I may want our table text to be a shade of red:
 
 	@table-text: #CC0000;
 
-	This has now removed the connection between @table-text and the @main-text; making our table text red whilst keeping the main text blue. 
+This has now removed the connection between @table-text and the @main-text; making our table text red whilst keeping the main text blue. 
 
 
 Nesting classes can make changing a color much quicker.
 
-	The example below shows several classes all with the same values:
+The example below shows several classes all with the same values:
 
 	@inverse-text: #FFFFFF;
 	@navbar-bg: #FFFFFF;
 	@navbar-border: #ffffff #ffffff #0066a2 #ffffff;
 	@footer-bg: #FFFFFF;
 
-	Further edits can be made easier my nesting these classes to make this:
+Further edits can be made easier my nesting these classes to make this:
 
 	@inverse-text: #FFFFFF;
 	@navbar-bg: @inverse-text;
 	@navbar-border: @inverse-text @inverse-text #0066a2 @inverse-text;
 	@footer-bg: @inverse-text;
 
-	This renders the navbar background, 3 sides of its border and the footer background the same color as the inverse text; changing the inverse-text color, changes all of these as well.
+This renders the navbar background, 3 sides of its border and the footer background the same color as the inverse text; changing the inverse-text color, changes all of these as well.
 
 
 There are 2 custom classes: .footer and .footer-text that are not from bootstrap; these are still customizable, the same as the bootstrapped css. 
@@ -90,7 +91,7 @@ Once any edits have been completed, the less file needs to be converted into css
 Manually is recommended as this allows your website to load quicker and makes it more secure; the programs mentioned below will also tell you if there are any errors in your less code.
 
 WINDOWS: 
-	Download winless from winless.org
+	Download winless from [Winless](winless.org).
 	Click 'Add folder', your less file should be shown on the right hand side.
 	Ensure that your less file is checked.
 	The 'Minify' checkbox is optional.
@@ -98,7 +99,7 @@ WINDOWS:
 	The output css file, by default, will be called the same as the input less file and will be in the same folder.
 
 MAC:
-	Download Simpless from wearekiss.com/simpless
+	Download Simpless from [wearekiss](wearekiss.com/simpless).
 	Drag and drop the containing folder into the program window
 	Click the compile button that is to the right of the file name, this may taker a couple of minutes.
 	The output css file, by default, will be called the same as the input less file and will be in the same folder.
@@ -108,8 +109,4 @@ This will create a css file which should be linked to your webpage like:
 Or if it's in a subfolder:
 	<link rel="stylesheet" href="folder/file.css">
 
-## Using Bootstrap
-
-A good guide on how to use twitter bootstrap and the included classes is here: http://getbootstrap.com/css/
-
-Original style taken from: https://bootswatch.com/cosmo/ and used as a template.
+Original style taken [here](https://bootswatch.com/cosmo/ "bootswatch") and used as a template.
