@@ -1,8 +1,8 @@
 # Welcome
 
-This project is to create a branded bootstrap theme for Canopy products, with the requirement to be easily customizable for a customer.
+This project is to create a branded responsive website theme for Canopy products, with the requirement to be easily customizable for a customer.
 
-This project uses less to make rebranding of the template easier. Less is a pre-compiler for the CSS styling sheet; this allows CSS to be used with greater flexability. This is done by compiling a Less file into CSS, which is then linked in the <head> of the html pages.
+This project uses less to make rebranding of the template easier. Less is a pre-compiler for the CSS styling sheet; this allows CSS to be used with greater flexability and can allow editing to be easier. This is done by compiling a Less file into CSS, which is then linked in the ```html <head>``` of the html pages.
 
 This template builds on Twitter Bootstrap; a framework that allows for easier creation of responsive websites. A good guide on how to use twitter bootstrap and the included classes is [here](http://getbootstrap.com/css/ "bootstrap"). Using this allows us to change only what we need to rather than creating a full CSS file from scratch.
 
@@ -10,6 +10,7 @@ This template builds on Twitter Bootstrap; a framework that allows for easier cr
 ## Included Files
 
 The **lessout-v2.css** file changes twitter bootstrap to match the Canopy theme and should be used in addition to the normal twitter bootstrap files; these are being recovered remotely for this project but should be included in the local directory.
+This file has been compiled from the .less file.
 
 **example html.html**  shows the customized elements in this template including the header, footer, buttons and tables.
 login.html shows a simple fully html canopy branded login page.
@@ -25,9 +26,12 @@ These include:
 
 ## Rebranding
 
+** All edits for the CSS should be done in the _canopycss.less_ file and it is recommended that you rename the file to suit the project you are on. E.G. cip.less **
+
 To customize this for your site, follow the instructions below. All CSS edits should follow CSS covention, a good reference guide can be found [here](http://www.w3schools.com/cssref/default.asp "W3Schools")
 
-Your first edit should be the color scheme. For bootstrap there is a set of classes that are used for aspects of the webpage: e.g. Buttons. These colors can allow for easier distinction of areas such as warnings and successes without having to change each class.
+Your first edit should be the color scheme. For bootstrap there is a set of classes that are used for aspects of the webpage: e.g. Buttons. These colors can allow for easier distinction of areas such as warnings and successes without having to change each class. The colors can be presented as Hex (#0066a2), rgb (0, 102, 162) or rgba (0, 102, 162, 1.0); in order to control opacity you will need to use rgba otherwise all colors will be fully opaque.
+
 The colors we have used for this template are as follows;
 
 * page-background: #f6f5f5;
@@ -105,7 +109,7 @@ Manually is recommended as this allows your website to load quicker and makes it
 *	Click the compile button that is to the right of the file name, this may taker a couple of minutes.
 *	The output css file, by default, will be called the same as the input less file and will be in the same folder.
 
-This will create a css file which should be linked to your webpage like:
+This will create a css file which should be linked within the ```html <head> ''' of your webpage like:
 	```html
 	<link rel="stylesheet" href="file.css">
 	```
@@ -113,3 +117,7 @@ Or if it's in a subfolder:
 	```html
 	<link rel="stylesheet" href="folder/file.css">
 	```
+
+##Using Bootstrap
+
+Being CSS bootstrap is called in the html
