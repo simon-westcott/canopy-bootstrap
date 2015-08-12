@@ -82,31 +82,34 @@ Further edits can be made easier my nesting these classes to make this:
 
 This renders the navbar background, 3 sides of its border and the footer background the same color as the inverse text; changing the inverse-text color, changes all of these as well.
 
+#### Custom Classes
 
-There are 2 custom classes: .footer and .footer-text that are not from bootstrap; these are still customizable, the same as the bootstrapped css. 
+There are 2 custom classes: .footer and .footer-text that are not from bootstrap; these are still customizable, the same as the bootstrapped css. These classes can also be mixed with the bootstrap classes.
 
 ## Compiling
 
 Once any edits have been completed, the less file needs to be converted into css. This can be done manually or automatically. 
-Manually is recommended as this allows your website to load quicker and makes it more secure; the programs mentioned below will also tell you if there are any errors in your less code.
+Manually is recommended as this allows your website to load quicker and makes it more secure (this is because it doesn't have to access a remote folder and run a script which will slow the load time of your website); the programs mentioned below will also tell you if there are any errors in your less code.
 
-WINDOWS: 
-	Download winless from [Winless](winless.org).
-	Click 'Add folder', your less file should be shown on the right hand side.
-	Ensure that your less file is checked.
-	The 'Minify' checkbox is optional.
-	Click 'Compile', this may take a couple of minutes.
-	The output css file, by default, will be called the same as the input less file and will be in the same folder.
+#### WINDOWS: 
+*	Download winless from [Winless](winless.org).
+*	Click 'Add folder', your less file should be shown on the right hand side.
+*	Ensure that your less file is checked.
+*	The 'Minify' checkbox is optional.
+*	Click 'Compile', this may take a couple of minutes.
+*	The output css file, by default, will be called the same as the input less file and will be in the same folder.
 
-MAC:
-	Download Simpless from [wearekiss](wearekiss.com/simpless).
-	Drag and drop the containing folder into the program window
-	Click the compile button that is to the right of the file name, this may taker a couple of minutes.
-	The output css file, by default, will be called the same as the input less file and will be in the same folder.
+#### MAC:
+*	Download Simpless from [wearekiss](wearekiss.com/simpless).
+*	Drag and drop the containing folder into the program window
+*	Click the compile button that is to the right of the file name, this may taker a couple of minutes.
+*	The output css file, by default, will be called the same as the input less file and will be in the same folder.
 
 This will create a css file which should be linked to your webpage like:
+	```html
 	<link rel="stylesheet" href="file.css">
+	```
 Or if it's in a subfolder:
+	```html
 	<link rel="stylesheet" href="folder/file.css">
-
-Original style taken [here](https://bootswatch.com/cosmo/ "bootswatch") and used as a template.
+	```
