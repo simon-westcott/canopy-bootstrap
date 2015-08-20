@@ -86,17 +86,13 @@ Further edits can be made easier my nesting these classes to make this:
 
 This renders the navbar background, 3 sides of its border and the footer background the same color as the inverse text; changing the inverse-text color, changes all of these as well.
 
-#### Custom Classes
-
-There are 2 custom classes: .footer and .footer-text that are not from bootstrap; these are still customizable, the same as the bootstrapped css. These classes can also be mixed with the bootstrap classes.
-
 ## Compiling
 
 Once any edits have been completed, the less file needs to be converted into css. This can be done manually or automatically. 
 Manually is recommended as this allows your website to load quicker and makes it more secure (this is because it doesn't have to access a remote folder and run a script which will slow the load time of your website); the programs mentioned below will also tell you if there are any errors in your less code.
 
 #### WINDOWS: 
-*	Download winless from [Winless](winless.org).
+*	Download winless from [Winless](winless.org) and install.
 *	Click 'Add folder', your less file should be shown on the right hand side.
 *	Ensure that your less file is checked.
 *	The 'Minify' checkbox is optional.
@@ -104,7 +100,7 @@ Manually is recommended as this allows your website to load quicker and makes it
 *	The output css file, by default, will be called the same as the input less file and will be in the same folder.
 
 #### MAC:
-*	Download Simpless from [wearekiss](wearekiss.com/simpless).
+*	Download Simpless from [wearekiss](wearekiss.com/simpless) and install.
 *	Drag and drop the containing folder into the program window
 *	Click the compile button that is to the right of the file name, this may taker a couple of minutes.
 *	The output css file, by default, will be called the same as the input less file and will be in the same folder.
@@ -113,11 +109,32 @@ This will create a css file which should be linked within the ```html <head> '''
 	```html
 	<link rel="stylesheet" href="file.css">
 	```
+
+This will work if your file structure looks like this:
+
+page.html
+file.css
+
+
 Or if it's in a subfolder:
 	```html
 	<link rel="stylesheet" href="folder/file.css">
 	```
+This will work if your file structure looks like this:
+
+page.html
+folder/file.css
+
 
 ##Using Bootstrap
 
-Being CSS bootstrap is called in the html
+Being CSS bootstrap is called in the html using the classes.
+	``` html
+	<div class=".btn .btn-danger">
+	</div>
+	```
+The example above would create a danger button on the page by calling the bootstrap CSS and replacing the colors with those we've specified in our custom file. A list of what each class does is available [here](http://getbootstrap.com/css/ "bootstrap").
+
+#### Custom Classes
+
+There are 2 custom classes: .footer and .footer-text that are not from bootstrap; these are still customizable, the same as the bootstrapped css. These classes can also be mixed with the bootstrap classes.
