@@ -26,7 +26,7 @@ These include:
 
 ## Rebranding
 
-** All edits for the CSS should be done in the _canopycss.less_ file and it is recommended that you rename the file to suit the project you are on. E.G. cip.less **
+**All edits for the CSS should be done in the _canopycss.less_ file and it is recommended that you rename the file to suit the project you are on. E.G. cip.less**
 
 To customize this for your site, follow the instructions below. All CSS edits should follow CSS covention, a good reference guide can be found [here](http://www.w3schools.com/cssref/default.asp "W3Schools")
 
@@ -111,20 +111,20 @@ This will create a css file which should be linked within the ```html <head> '''
 	```
 
 This will work if your file structure looks like this:
-
+```
 page.html
 file.css
-
+```
 
 Or if it's in a subfolder:
 	```html
 	<link rel="stylesheet" href="folder/file.css">
 	```
 This will work if your file structure looks like this:
-
+```
 page.html
 folder/file.css
-
+```
 
 ##Using Bootstrap
 
