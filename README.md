@@ -28,7 +28,7 @@ These include:
 
 **All edits for the CSS should be done in the _canopycss.less_ file and it is recommended that you rename the file to suit the project you are on. E.G. cip.less**
 
-To customize this for your site, follow the instructions below. All CSS edits should follow CSS covention, a good reference guide can be found [here](http://www.w3schools.com/cssref/default.asp "W3Schools")
+To customize this for your site, follow the instructions below. All CSS edits should follow CSS convention, a good reference guide can be found [here](http://www.w3schools.com/cssref/default.asp "W3Schools")
 
 Your first edit should be the color scheme. For bootstrap there is a set of classes that are used for aspects of the webpage: e.g. Buttons. These colors can allow for easier distinction of areas such as warnings and successes without having to change each class. The colors can be presented as Hex (#0066a2), rgb (0, 102, 162) or rgba (0, 102, 162, 1.0); in order to control opacity you will need to use rgba otherwise all colors will be fully opaque.
 
@@ -93,7 +93,8 @@ Manually is recommended as this allows your website to load quicker and makes it
 
 #### WINDOWS: 
 *	Download winless from [Winless](winless.org) and install.
-*	Click 'Add folder', your less file should be shown on the right hand side.
+*	Click 'Add folder' and add the folder that contains your less file
+*	Your less file should be shown on the right hand side.
 *	Ensure that your less file is checked.
 *	The 'Minify' checkbox is optional.
 *	Click 'Compile', this may take a couple of minutes.
@@ -101,7 +102,7 @@ Manually is recommended as this allows your website to load quicker and makes it
 
 #### MAC:
 *	Download Simpless from [wearekiss](wearekiss.com/simpless) and install.
-*	Drag and drop the containing folder into the program window
+*	Drag and drop the folder that contains your less file into the program window
 *	Click the compile button that is to the right of the file name, this may taker a couple of minutes.
 *	The output css file, by default, will be called the same as the input less file and will be in the same folder.
 
@@ -137,4 +138,4 @@ The example above would create a danger button on the page by calling the bootst
 
 #### Custom Classes
 
-There are 2 custom classes: .footer and .footer-text that are not from bootstrap; these are still customizable, the same as the bootstrapped css. These classes can also be mixed with the bootstrap classes.
+There are 2 custom classes: __.footer__ and __.footer-text__ that are not from bootstrap; these are still customizable, the same as the bootstrapped css. These classes can also be mixed with the bootstrap classes.
