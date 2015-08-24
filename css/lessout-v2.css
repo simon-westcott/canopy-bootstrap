@@ -649,6 +649,10 @@ NAVBAR
 .navbar-default .navbar-nav > li:first-child {
   margin-left: 5px;
 }
+
+.navbar {
+  border-radius: 0px;
+}
 /*************************
 DROPDOWN MENU
 *************************/

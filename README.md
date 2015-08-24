@@ -12,7 +12,7 @@ This template builds on Twitter Bootstrap; a framework that allows for easier cr
 The **lessout-v2.css** file changes twitter bootstrap to match the Canopy theme and should be used in addition to the normal twitter bootstrap files; these are being recovered remotely for this project but should be included in the local directory.
 This file has been compiled from the .less file.
 
-**example html.html**  shows the customized elements in this template including the header, footer, buttons and tables.
+**preview.html**  shows the customized elements in this template including the header, footer, buttons and tables.
 login.html shows a simple fully html canopy branded login page.
 
 Key sections have been templated ready for content.
@@ -88,8 +88,10 @@ This renders the navbar background, 3 sides of its border and the footer backgro
 
 ## Compiling
 
-Once any edits have been completed, the less file needs to be converted into css. This can be done manually or automatically. 
+Once any edits have been completed, the less file needs to be converted into css. This can be done by manually compiling the less file into css, then linking to the css file; or automatically by relying on the host server to convert the file. 
 Manually is recommended as this allows your website to load quicker and makes it more secure (this is because it doesn't have to access a remote folder and run a script which will slow the load time of your website); the programs mentioned below will also tell you if there are any errors in your less code.
+
+For a more complete guide to less visit the official website [here](http://lesscss.org/ "lesscss.org")
 
 #### WINDOWS: 
 *	Download winless from [Winless](winless.org) and install.
@@ -106,7 +108,7 @@ Manually is recommended as this allows your website to load quicker and makes it
 *	Click the compile button that is to the right of the file name, this may taker a couple of minutes.
 *	The output css file, by default, will be called the same as the input less file and will be in the same folder.
 
-This will create a css file which should be linked within the ```html <head> ''' of your webpage like:
+This will create a css file which should be linked within the ```<head>``` of your webpage like:
 	```html
 	<link rel="stylesheet" href="file.css">
 	```
@@ -125,6 +127,16 @@ This will work if your file structure looks like this:
 ```
 page.html
 folder/file.css
+```
+
+Should you want to rely on the server to convert your less file into css you need to link your less file in the ```<head>``` of your file.
+```html
+<link rel="stylesheet/less" type="text/css" href="file.less">
+```
+You will need to download the latest version of less [here](https://raw.github.com/less/less.js/v2.5.1/dist/less.min.js "less.js").
+Create the link to the javascript file **__underneath__** the link to the less file.
+```html
+<script src="less.js" type="text/javascript"></script>
 ```
 
 ##Using Bootstrap
